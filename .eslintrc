@@ -2,7 +2,9 @@
   "extends": [
     "plugin:vue/essential",
     "eslint-config-airbnb-base",
-    "@vue/typescript/recommended"
+    "@vue/typescript/recommended",
+    "plugin:vuejs-accessibility/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
   "env": {
     "browser": true,
@@ -16,7 +18,9 @@
   },
   "plugins": [
     "vue",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "vuejs-accessibility",
+    "jsx-a11y"
   ],
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
