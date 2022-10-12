@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import { jest, expect, it } from '@jest/globals';
+import { vi, expect, it } from 'vitest';
 import { Dropdown, DropdownMenu, DropdownItem } from '../index';
 
 // every component needs four parts: props/events/slots/functions.
@@ -32,7 +32,7 @@ describe('Dropdown', () => {
   });
 
   it('should emit click event', () => {
-    const onClick = jest.fn();
+    const onClick = vi.fn();
     const dropdownWrapper = mount({
       render() {
         return <Dropdown options={props.options} onClick={onClick}></Dropdown>;
@@ -118,17 +118,17 @@ describe('Dropdown', () => {
       {
         content: '操作一',
         value: 1,
-        onClick: jest.fn(),
+        onClick: vi.fn(),
       },
       {
         content: '操作二',
         value: 2,
-        onClick: jest.fn(),
+        onClick: vi.fn(),
       },
       {
         content: '操作三',
         value: 3,
-        onClick: jest.fn(),
+        onClick: vi.fn(),
       },
     ];
     const dropdownWrapper = mount({

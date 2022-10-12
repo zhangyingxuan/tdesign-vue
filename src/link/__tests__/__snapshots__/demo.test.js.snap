@@ -1,801 +1,478 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Link Link baseVue demo works fine 1`] = `
-<div
-  class="t-space t-space-horizontal"
-  style="gap: 16px;"
->
-  <div
-    class="t-space-item"
+exports[`Link > Link baseVue demo works fine 1`] = `
+<t-space>
+  <t-link
+    theme="primary"
   >
-    <a
-      class="t-link t-size-m t-link--theme-primary t-link--hover-underline"
-      target=""
-    >
-      跳转链接
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Link Link disabledVue demo works fine 1`] = `
-<div
-  class="t-space t-space-horizontal"
-  style="gap: 16px;"
->
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-default t-is-disabled"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-primary t-is-disabled t-is-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-danger t-is-disabled"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-warning t-is-disabled"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-success t-is-disabled"
-      target=""
-    >
-      
     跳转链接
-  
-      <span
-        class="t-link__suffix-icon"
-      >
-        <svg
-          class="t-icon t-icon-jump"
-          fill="none"
-          height="1em"
-          viewBox="0 0 16 16"
-          width="1em"
-        >
-          <path
-            d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-          <path
-            d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-        </svg>
-      </span>
-    </a>
-  </div>
-</div>
+  </t-link>
+</t-space>
 `;
 
-exports[`Link Link hoverVue demo works fine 1`] = `
-<div
-  class="t-space t-space-vertical"
-  style="gap: 16px;"
->
-  <div
-    class="t-space-item"
+exports[`Link > Link disabledVue demo works fine 1`] = `
+<t-space>
+  <t-link
+    disabled=""
+    theme="default"
   >
-    <div
-      class="t-space t-space-horizontal"
-      style="gap: 16px;"
-    >
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-default t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-primary t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-danger t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-warning t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-success t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-    </div>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    disabled=""
+    theme="primary"
+    underline=""
   >
-    <div
-      class="t-space t-space-horizontal"
-      style="gap: 16px;"
-    >
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-default t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-primary t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-danger t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-warning t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-success t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-    </div>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    disabled=""
+    hover="color"
+    theme="danger"
   >
-    <div
-      class="t-space t-space-horizontal"
-      style="gap: 16px;"
+     跳转链接 
+  </t-link>
+  <t-link
+    disabled=""
+    hover="underline"
+    onclick="function () { [native code] }"
+    theme="warning"
+  >
+     跳转链接 
+  </t-link>
+  <t-link
+    disabled=""
+    theme="success"
+  >
+    <svg
+      class="t-icon t-icon-jump"
+      fill="none"
+      height="1em"
+      slot="suffixIcon"
+      viewBox="0 0 16 16"
+      width="1em"
     >
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-default t-is-underline t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-primary t-is-underline t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-danger t-is-underline t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-warning t-is-underline t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-success t-is-underline t-link--hover-color"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+      <path
+        d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
+        fill="currentColor"
+        fill-opacity="0.9"
+      />
+      <path
+        d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
+        fill="currentColor"
+        fill-opacity="0.9"
+      />
+    </svg>
+     跳转链接 
+  </t-link>
+</t-space>
 `;
 
-exports[`Link Link iconVue demo works fine 1`] = `
-<div
-  class="t-space t-space-horizontal"
-  style="gap: 16px;"
+exports[`Link > Link hoverVue demo works fine 1`] = `
+<t-space
+  direction="vertical"
 >
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-default t-link--hover-underline"
-      target=""
-    >
-      <span
-        class="t-link__prefix-icon"
-      >
-        <svg
-          class="t-icon t-icon-link"
-          fill="none"
-          height="1em"
-          viewBox="0 0 16 16"
-          width="1em"
-        >
-          <path
-            d="M6.23 11.89l2.12-2.12.71.7-2.12 2.13A2.5 2.5 0 013.4 9.06l2.13-2.12.7.7-2.12 2.13a1.5 1.5 0 002.12 2.12zM10.47 9.06l-.7-.7 2.12-2.13a1.5 1.5 0 10-2.12-2.12L7.65 6.23l-.71-.7L9.06 3.4a2.5 2.5 0 013.54 3.54l-2.13 2.12z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-          <path
-            d="M9.06 6.23L6.23 9.06l.71.7 2.83-2.82-.7-.7z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-        </svg>
-      </span>
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-primary t-is-underline t-link--hover-underline"
-      href="https://tdesign.tencent.com/"
-      target="_self"
-    >
-      <span
-        class="t-link__prefix-icon"
-      >
-        <svg
-          class="t-icon t-icon-link"
-          fill="none"
-          height="1em"
-          viewBox="0 0 16 16"
-          width="1em"
-        >
-          <path
-            d="M6.23 11.89l2.12-2.12.71.7-2.12 2.13A2.5 2.5 0 013.4 9.06l2.13-2.12.7.7-2.12 2.13a1.5 1.5 0 002.12 2.12zM10.47 9.06l-.7-.7 2.12-2.13a1.5 1.5 0 10-2.12-2.12L7.65 6.23l-.71-.7L9.06 3.4a2.5 2.5 0 013.54 3.54l-2.13 2.12z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-          <path
-            d="M9.06 6.23L6.23 9.06l.71.7 2.83-2.82-.7-.7z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-        </svg>
-      </span>
-      
-    跳转链接
-  
-    </a>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-danger t-link--hover-color"
-      href="https://tdesign.tencent.com/"
-      target="_blank"
-    >
-      
-    跳转链接
-  
-      <span
-        class="t-link__suffix-icon"
-      >
-        <svg
-          class="t-icon t-icon-jump"
-          fill="none"
-          height="1em"
-          viewBox="0 0 16 16"
-          width="1em"
-        >
-          <path
-            d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-          <path
-            d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-        </svg>
-      </span>
-    </a>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <a
-      class="t-link t-size-m t-link--theme-warning t-is-disabled"
-      target=""
+  <t-space>
+    <t-link
+      hover="underline"
+      theme="default"
     >
        跳转链接 
-      <span
-        class="t-link__suffix-icon"
-      >
-        <svg
-          class="t-icon t-icon-jump"
-          fill="none"
-          height="1em"
-          viewBox="0 0 16 16"
-          width="1em"
-        >
-          <path
-            d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-          <path
-            d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
-            fill="currentColor"
-            fill-opacity="0.9"
-          />
-        </svg>
-      </span>
-    </a>
-  </div>
-</div>
+    </t-link>
+    <t-link
+      hover="underline"
+      theme="primary"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="underline"
+      theme="danger"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="underline"
+      theme="warning"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="underline"
+      theme="success"
+    >
+       跳转链接 
+    </t-link>
+  </t-space>
+  <t-space>
+    <t-link
+      hover="color"
+      theme="default"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="primary"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="danger"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="warning"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="success"
+    >
+       跳转链接 
+    </t-link>
+  </t-space>
+  <t-space>
+    <t-link
+      hover="color"
+      theme="default"
+      underline=""
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="primary"
+      underline=""
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="danger"
+      underline=""
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="warning"
+      underline=""
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      hover="color"
+      theme="success"
+      underline=""
+    >
+       跳转链接 
+    </t-link>
+  </t-space>
+</t-space>
 `;
 
-exports[`Link Link sizeVue demo works fine 1`] = `
-<div
-  class="t-space t-space-vertical"
-  style="gap: 16px;"
->
-  <div
-    class="t-space-item"
+exports[`Link > Link iconVue demo works fine 1`] = `
+<t-space>
+  <t-link
+    onclick="function () { [native code] }"
+    prefix-icon="() => h(__vite_ssr_import_0__.LinkIcon)"
+    theme="default"
   >
-    <div
-      class="t-space t-space-horizontal"
-      style="gap: 16px;"
+     跳转链接 
+  </t-link>
+  <t-link
+    href="https://tdesign.tencent.com/"
+    target="_self"
+    theme="primary"
+    underline=""
+  >
+    <svg
+      class="t-icon t-icon-link"
+      fill="none"
+      height="1em"
+      slot="prefix-icon"
+      viewBox="0 0 16 16"
+      width="1em"
     >
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-s t-link--theme-default t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-s t-link--theme-primary t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-s t-link--theme-danger t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-s t-link--theme-warning t-is-disabled"
-          target=""
-        >
-          跳转链接
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-s t-link--theme-success t-link--hover-underline"
-          target=""
-        >
-          
+      <path
+        d="M6.23 11.89l2.12-2.12.71.7-2.12 2.13A2.5 2.5 0 013.4 9.06l2.13-2.12.7.7-2.12 2.13a1.5 1.5 0 002.12 2.12zM10.47 9.06l-.7-.7 2.12-2.13a1.5 1.5 0 10-2.12-2.12L7.65 6.23l-.71-.7L9.06 3.4a2.5 2.5 0 013.54 3.54l-2.13 2.12z"
+        fill="currentColor"
+        fill-opacity="0.9"
+      />
+      <path
+        d="M9.06 6.23L6.23 9.06l.71.7 2.83-2.82-.7-.7z"
+        fill="currentColor"
+        fill-opacity="0.9"
+      />
+    </svg>
+     跳转链接 
+  </t-link>
+  <t-link
+    hover="color"
+    href="https://tdesign.tencent.com/"
+    target="_blank"
+    theme="danger"
+  >
+    <svg
+      class="t-icon t-icon-jump"
+      fill="none"
+      height="1em"
+      slot="suffixIcon"
+      viewBox="0 0 16 16"
+      width="1em"
+    >
+      <path
+        d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
+        fill="currentColor"
+        fill-opacity="0.9"
+      />
+      <path
+        d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
+        fill="currentColor"
+        fill-opacity="0.9"
+      />
+    </svg>
+     跳转链接 
+  </t-link>
+  <t-link
+    disabled=""
+    suffixicon="() => h(__vite_ssr_import_0__.JumpIcon)"
+    theme="warning"
+  >
+     跳转链接 
+  </t-link>
+</t-space>
+`;
+
+exports[`Link > Link sizeVue demo works fine 1`] = `
+<t-space
+  direction="vertical"
+>
+  <t-space>
+    <t-link
+      size="small"
+      theme="default"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      size="small"
+      theme="primary"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      size="small"
+      theme="danger"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      disabled=""
+      size="small"
+      theme="warning"
+    >
       跳转链接
-    
-          <span
-            class="t-link__suffix-icon"
-          >
-            <svg
-              class="t-icon t-icon-jump"
-              fill="none"
-              height="1em"
-              viewBox="0 0 16 16"
-              width="1em"
-            >
-              <path
-                d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-              <path
-                d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-            </svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <div
-      class="t-space t-space-horizontal"
-      style="gap: 16px;"
+    </t-link>
+    <t-link
+      size="small"
+      theme="success"
     >
-      <div
-        class="t-space-item"
+      <svg
+        class="t-icon t-icon-jump"
+        fill="none"
+        height="1em"
+        slot="suffix-icon"
+        viewBox="0 0 16 16"
+        width="1em"
       >
-        <a
-          class="t-link t-size-m t-link--theme-default t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-primary t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-danger t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-warning t-is-disabled"
-          target=""
-        >
-          跳转链接
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-m t-link--theme-success t-link--hover-underline"
-          target=""
-        >
-          
-      跳转链接
-    
-          <span
-            class="t-link__suffix-icon"
-          >
-            <svg
-              class="t-icon t-icon-jump"
-              fill="none"
-              height="1em"
-              viewBox="0 0 16 16"
-              width="1em"
-            >
-              <path
-                d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-              <path
-                d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-            </svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div
-    class="t-space-item"
-  >
-    <div
-      class="t-space t-space-horizontal"
-      style="gap: 16px;"
+        <path
+          d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
+          fill="currentColor"
+          fill-opacity="0.9"
+        />
+        <path
+          d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
+          fill="currentColor"
+          fill-opacity="0.9"
+        />
+      </svg>
+       跳转链接 
+    </t-link>
+  </t-space>
+  <t-space>
+    <t-link
+      size="medium"
+      theme="default"
     >
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-l t-link--theme-default t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-l t-link--theme-primary t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-l t-link--theme-danger t-link--hover-underline"
-          target=""
-        >
-           跳转链接 
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-l t-link--theme-warning t-is-disabled"
-          target=""
-        >
-          跳转链接
-        </a>
-      </div>
-      <div
-        class="t-space-item"
-      >
-        <a
-          class="t-link t-size-l t-link--theme-success t-link--hover-underline"
-          target=""
-        >
-          
+       跳转链接 
+    </t-link>
+    <t-link
+      size="medium"
+      theme="primary"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      size="medium"
+      theme="danger"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      disabled=""
+      size="medium"
+      theme="warning"
+    >
       跳转链接
-    
-          <span
-            class="t-link__suffix-icon"
-          >
-            <svg
-              class="t-icon t-icon-jump"
-              fill="none"
-              height="1em"
-              viewBox="0 0 16 16"
-              width="1em"
-            >
-              <path
-                d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-              <path
-                d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-            </svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+    </t-link>
+    <t-link
+      size="medium"
+      theme="success"
+    >
+      <svg
+        class="t-icon t-icon-jump"
+        fill="none"
+        height="1em"
+        slot="suffix-icon"
+        viewBox="0 0 16 16"
+        width="1em"
+      >
+        <path
+          d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
+          fill="currentColor"
+          fill-opacity="0.9"
+        />
+        <path
+          d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
+          fill="currentColor"
+          fill-opacity="0.9"
+        />
+      </svg>
+       跳转链接 
+    </t-link>
+  </t-space>
+  <t-space>
+    <t-link
+      size="large"
+      theme="default"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      size="large"
+      theme="primary"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      size="large"
+      theme="danger"
+    >
+       跳转链接 
+    </t-link>
+    <t-link
+      disabled=""
+      size="large"
+      theme="warning"
+    >
+      跳转链接
+    </t-link>
+    <t-link
+      size="large"
+      theme="success"
+    >
+      <svg
+        class="t-icon t-icon-jump"
+        fill="none"
+        height="1em"
+        slot="suffix-icon"
+        viewBox="0 0 16 16"
+        width="1em"
+      >
+        <path
+          d="M2.3 13.7a1 1 0 00.7.3h10a1 1 0 001-1V8.5h-1V13H3V3h4.5V2H3a1 1 0 00-1 1v10c0 .27.1.52.3.7z"
+          fill="currentColor"
+          fill-opacity="0.9"
+        />
+        <path
+          d="M9 3V2h4.5c.28 0 .5.22.5.5V7h-1V3.7L8.7 8 8 7.3 12.3 3H9z"
+          fill="currentColor"
+          fill-opacity="0.9"
+        />
+      </svg>
+       跳转链接 
+    </t-link>
+  </t-space>
+</t-space>
 `;
 
-exports[`Link Link themeVue demo works fine 1`] = `
-<div
-  class="t-space t-space-horizontal"
-  style="gap: 16px;"
->
-  <div
-    class="t-space-item"
+exports[`Link > Link themeVue demo works fine 1`] = `
+<t-space>
+  <t-link
+    theme="default"
   >
-    <a
-      class="t-link t-size-m t-link--theme-default t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="primary"
   >
-    <a
-      class="t-link t-size-m t-link--theme-primary t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="danger"
   >
-    <a
-      class="t-link t-size-m t-link--theme-danger t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="warning"
   >
-    <a
-      class="t-link t-size-m t-link--theme-warning t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="success"
   >
-    <a
-      class="t-link t-size-m t-link--theme-success t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-</div>
+     跳转链接 
+  </t-link>
+</t-space>
 `;
 
-exports[`Link Link underlineVue demo works fine 1`] = `
-<div
-  class="t-space t-space-horizontal"
-  style="gap: 16px;"
->
-  <div
-    class="t-space-item"
+exports[`Link > Link underlineVue demo works fine 1`] = `
+<t-space>
+  <t-link
+    theme="default"
+    underline=""
   >
-    <a
-      class="t-link t-size-m t-link--theme-default t-is-underline t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="primary"
+    underline=""
   >
-    <a
-      class="t-link t-size-m t-link--theme-primary t-is-underline t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="danger"
+    underline=""
   >
-    <a
-      class="t-link t-size-m t-link--theme-danger t-is-underline t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="warning"
+    underline=""
   >
-    <a
-      class="t-link t-size-m t-link--theme-warning t-is-underline t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-  <div
-    class="t-space-item"
+     跳转链接 
+  </t-link>
+  <t-link
+    theme="success"
+    underline=""
   >
-    <a
-      class="t-link t-size-m t-link--theme-success t-is-underline t-link--hover-underline"
-      target=""
-    >
-       跳转链接 
-    </a>
-  </div>
-</div>
+     跳转链接 
+  </t-link>
+</t-space>
 `;

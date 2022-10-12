@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import { List, ListItem, ListItemMeta } from '@/src/list/index.ts';
 
 describe('List', () => {
@@ -103,7 +104,7 @@ describe('List', () => {
   });
   describe('@event', () => {
     it('@scroll', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <List onScroll={fn}>text</List>;
@@ -113,7 +114,7 @@ describe('List', () => {
       expect(fn).toHaveBeenCalled();
     });
     it('@load-more', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <List onLoadMore={fn}>text</List>;

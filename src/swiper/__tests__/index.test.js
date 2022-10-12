@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils';
 import Vue from 'vue';
+import { vi } from 'vitest';
 import Swiper, { SwiperItem } from '@/src/swiper/index.ts';
 
 // every component needs four parts: props/events/slots/functions.
@@ -171,7 +172,7 @@ describe('Swiper', () => {
   // test events
   describe('@event', () => {
     it('@change', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (

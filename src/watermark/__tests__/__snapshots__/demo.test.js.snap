@@ -1,85 +1,91 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Watermark Watermark baseVue demo works fine 1`] = `
-<div
-  class="t-watermark"
-  style="position: relative; overflow: hidden; width: 100%;"
+exports[`Watermark > Watermark baseVue demo works fine 1`] = `
+<t-watermark
+  height="60"
+  watermark-content="[object Object]"
+  width="120"
+  x="80"
+  y="120"
 >
   <div
     style="height: 300px;"
   />
-  <div
-    style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; width: 100%; height: 100%; background-size: 200px; pointer-events: none; background-repeat: repeat; background-image: url(); animation: none;"
-  />
-</div>
+</t-watermark>
 `;
 
-exports[`Watermark Watermark graylevelVue demo works fine 1`] = `
-<div
-  class="t-watermark"
-  style="position: relative; overflow: hidden; width: 100%;"
+exports[`Watermark > Watermark graylevelVue demo works fine 1`] = `
+<t-watermark
+  alpha="0.3"
+  height="22"
+  watermark-content="[object Object]"
+  width="158"
+  x="100"
+  y="140"
 >
   <div
     style="height: 300px;"
   />
-  <div
-    style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; width: 100%; height: 100%; background-size: 258px; pointer-events: none; background-repeat: repeat; background-image: url(); animation: none;"
-  />
-</div>
+</t-watermark>
 `;
 
-exports[`Watermark Watermark imageVue demo works fine 1`] = `
-<div
-  class="t-watermark"
-  style="position: relative; overflow: hidden; width: 100%;"
+exports[`Watermark > Watermark imageVue demo works fine 1`] = `
+<t-watermark
+  height="65.5"
+  rotate="0"
+  watermark-content="[object Object]"
+  width="104"
+  x="90"
+  y="100"
 >
   <div
     style="height: 300px;"
   />
-  <div
-    style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; width: 100%; height: 100%; background-size: 194px; pointer-events: none; background-repeat: repeat; background-image: url(); animation: none;"
-  />
-</div>
+</t-watermark>
 `;
 
-exports[`Watermark Watermark movingImageVue demo works fine 1`] = `
-<div
-  class="t-watermark"
-  style="position: relative; overflow: hidden; width: 100%;"
+exports[`Watermark > Watermark movingImageVue demo works fine 1`] = `
+<t-watermark
+  height="22"
+  movable=""
+  watermark-content="[object Object]"
+  width="158"
+  x="90"
+  y="100"
 >
   <div
     style="height: 300px;"
   />
-  <div
-    style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; width: 100%; height: 100%; background-size: 158px; pointer-events: none; background-repeat: no-repeat; background-image: url(); animation: watermark infinite 200s;"
-  />
-</div>
+</t-watermark>
 `;
 
-exports[`Watermark Watermark movingTextVue demo works fine 1`] = `
-<div
-  class="t-watermark"
-  style="position: relative; overflow: hidden; width: 100%;"
+exports[`Watermark > Watermark movingTextVue demo works fine 1`] = `
+<t-watermark
+  height="60"
+  movable=""
+  watermark-content="[object Object]"
+  width="120"
+  x="210"
+  y="200"
 >
   <div
     style="height: 300px;"
   />
-  <div
-    style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; width: 100%; height: 100%; background-size: 120px; pointer-events: none; background-repeat: no-repeat; background-image: url(); animation: watermark infinite 200s;"
-  />
-</div>
+</t-watermark>
 `;
 
-exports[`Watermark Watermark multilineVue demo works fine 1`] = `
-<div
-  class="t-watermark"
-  style="position: relative; overflow: hidden; width: 100%;"
+exports[`Watermark > Watermark multilineVue demo works fine 1`] = `
+<t-watermark
+  alpha="0.3"
+  height="22"
+  line-space="24"
+  watermark-content="[object Object],[object Object]"
+  width="158"
+  x="100"
+  y="120"
 >
   <div
     style="height: 300px;"
   />
-  <div
-    style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; width: 100%; height: 100%; background-size: 258px; pointer-events: none; background-repeat: repeat; background-image: url(); animation: none;"
-  />
-</div>
+</t-watermark>
 `;

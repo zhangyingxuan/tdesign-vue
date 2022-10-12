@@ -1,7 +1,11 @@
 import Vue from 'vue';
-import VueCompositionAPI from '@vue/composition-api';
-import TDesign from '@/src/index';
+import createFetchMock from 'vitest-fetch-mock';
+import { vi } from 'vitest';
+import VueCompositionApi from '@vue/composition-api';
+import TDesign from '../../src';
 
-Vue.use(VueCompositionAPI);
+const fetchMock = createFetchMock(vi);
+fetchMock.enableMocks();
+
+Vue.use(VueCompositionApi);
 Vue.use(TDesign);
-Vue.config.productionTip = false;

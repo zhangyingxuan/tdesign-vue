@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import { Anchor, AnchorItem } from '@/src/anchor/index.ts';
 
 // every component needs four parts: props/events/slots/functions.
@@ -45,7 +46,7 @@ describe('Anchor', () => {
   // test events
   describe('@event', () => {
     it('should emit click event', () => {
-      const onClick = jest.fn();
+      const onClick = vi.fn();
       const wrapper = mount({
         render() {
           return (
@@ -64,7 +65,7 @@ describe('Anchor', () => {
       });
     });
     it('should trigger onClick props', () => {
-      const onClick = jest.fn();
+      const onClick = vi.fn();
       const wrapper = mount({
         render(h) {
           return h(
@@ -98,7 +99,7 @@ describe('Anchor', () => {
       });
     });
     it('should emit change event', () => {
-      const onChange = jest.fn();
+      const onChange = vi.fn();
       const wrapper = mount({
         render() {
           return (
@@ -118,7 +119,7 @@ describe('Anchor', () => {
       expect(onChange).toBeCalledWith('#test-b', '#test-a');
     });
     it('should trigger onChange props', () => {
-      const onChange = jest.fn();
+      const onChange = vi.fn();
       const wrapper = mount({
         render(h) {
           return h(
@@ -273,7 +274,7 @@ describe('Anchor', () => {
       const wrapper = getWrapper();
       const anchors = getAnchor();
       setAnchorTop(anchors, [-400, -200, -10, 190, 400]);
-      const scrollTo = jest.fn();
+      const scrollTo = vi.fn();
       Object.defineProperty(window, 'scrollTo', {
         get() {
           return scrollTo;
@@ -293,7 +294,7 @@ describe('Anchor', () => {
       const wrapper = getWrapper({ targetOffset: 150, bounds: 50 });
       const anchors = getAnchor();
       setAnchorTop(anchors, [-400, -200, -10, 190, 400]);
-      const scrollTo = jest.fn();
+      const scrollTo = vi.fn();
       Object.defineProperty(window, 'scrollTo', {
         get() {
           return scrollTo;

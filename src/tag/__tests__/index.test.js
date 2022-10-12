@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Tag from '@/src/tag/index.ts';
 import CheckTag from '@/src/tag/check-tag.tsx';
 
@@ -79,7 +80,7 @@ describe('Tag or CheckTag', () => {
     });
 
     it(':closable', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Tag closable onClose={fn}></Tag>;
@@ -100,7 +101,7 @@ describe('Tag or CheckTag', () => {
     });
 
     it(':disabled', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Tag disabled onClick={fn}></Tag>;
@@ -277,7 +278,7 @@ describe('Tag or CheckTag', () => {
       expect(wrapper).toMatchSnapshot();
     });
     it(':disabled', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <CheckTag disabled onClick={fn}></CheckTag>;
@@ -301,7 +302,7 @@ describe('Tag or CheckTag', () => {
 
   describe('@event: Tag', () => {
     it('Event passthrough: click', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Tag onClick={fn}>text</Tag>;
@@ -311,7 +312,7 @@ describe('Tag or CheckTag', () => {
       expect(fn).toHaveBeenCalled();
     });
     it('Event passthrough: close', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Tag closable onClose={fn}></Tag>;
@@ -325,7 +326,7 @@ describe('Tag or CheckTag', () => {
 
   describe('@event: CheckTag', () => {
     it('Event passthrough: click', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (
@@ -339,7 +340,7 @@ describe('Tag or CheckTag', () => {
       expect(fn).toBeCalled();
     });
     it('Event passthrough: trigger onClick props', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render(h) {
           return h(CheckTag, {

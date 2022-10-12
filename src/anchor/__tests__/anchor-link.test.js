@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils';
 import Vue from 'vue';
+import { vi } from 'vitest';
 import { omit } from 'lodash';
 import { AnchorItem } from '@/src/anchor/index.ts';
 
@@ -28,10 +29,10 @@ describe('AnchorItem', () => {
     it('should render props correctly', async () => {
       const provide = {
         active: '',
-        handleScrollTo: jest.fn(),
-        registerLink: jest.fn(),
-        unregisterLink: jest.fn(),
-        handleLinkClick: jest.fn(),
+        handleScrollTo: vi.fn(),
+        registerLink: vi.fn(),
+        unregisterLink: vi.fn(),
+        handleLinkClick: vi.fn(),
       };
       const props = {
         href: '#test',
@@ -68,8 +69,8 @@ describe('AnchorItem', () => {
     it('should render title by function', async () => {
       const provide = {
         active: '',
-        registerLink: jest.fn(),
-        unregisterLink: jest.fn(),
+        registerLink: vi.fn(),
+        unregisterLink: vi.fn(),
       };
       const title = 'this is title function';
       const props = {

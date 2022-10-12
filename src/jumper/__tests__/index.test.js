@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Jumper from '@/src/jumper/index.ts';
 
 describe('Jumper', () => {
@@ -100,7 +101,7 @@ describe('Jumper', () => {
 
   describe('@event', () => {
     it('@change', () => {
-      const onChange = jest.fn();
+      const onChange = vi.fn();
       const wrapper = mount(Jumper, {
         propsData: {
           onChange,

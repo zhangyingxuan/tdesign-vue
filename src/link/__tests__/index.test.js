@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Link from '@/src/link/index.ts';
 
 // every component needs four parts: props/events/slots/functions.
@@ -38,7 +39,7 @@ describe('Link', () => {
       expect(wrapper).toMatchSnapshot();
     });
     it(':disabled', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (
@@ -76,7 +77,7 @@ describe('Link', () => {
   // test events
   describe('@event', () => {
     it('Event passthrough ', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Link onClick={fn}>text</Link>;

@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Button from '@/src/button/index.ts';
 
 describe('Button', () => {
@@ -38,7 +39,7 @@ describe('Button', () => {
       expect(wrapper).toMatchSnapshot();
     });
     it(':loading', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Button loading={true}>text</Button>;
@@ -57,7 +58,7 @@ describe('Button', () => {
       expect(wrapper).toMatchSnapshot();
     });
     it(':disabled', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (
@@ -95,7 +96,7 @@ describe('Button', () => {
 
   describe('@event', () => {
     it('Event passthrough ', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Button onClick={fn}>text</Button>;

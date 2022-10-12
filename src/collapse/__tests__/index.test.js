@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils';
 import Vue from 'vue';
+import { vi } from 'vitest';
 import { Collapse, CollapsePanel } from '../index';
 
 describe('Collapse', () => {
@@ -52,7 +53,7 @@ describe('Collapse', () => {
     });
 
     test(':disabled', async () => {
-      const mockFn = jest.fn();
+      const mockFn = vi.fn();
       const wrapper = mount(
         Vue.extend({
           components: {
@@ -167,7 +168,7 @@ describe('Collapse', () => {
     });
 
     test(':expandOnRowClick', async () => {
-      const mockFn = jest.fn();
+      const mockFn = vi.fn();
       const wrapper = mount(
         Vue.extend({
           components: {
@@ -227,7 +228,7 @@ describe('Collapse', () => {
 
   describe('@event', () => {
     test('change', async () => {
-      const mockFn = jest.fn();
+      const mockFn = vi.fn();
       const wrapper = mount(
         Vue.extend({
           components: {
@@ -308,7 +309,7 @@ describe('CollapsePanel', () => {
     });
 
     test(':disabled', async () => {
-      const mockFn = jest.fn();
+      const mockFn = vi.fn();
       const wrapper = mount(
         Vue.extend({
           components: {
@@ -366,7 +367,7 @@ describe('CollapsePanel', () => {
     });
 
     test(':value', async () => {
-      const mockFn = jest.fn();
+      const mockFn = vi.fn();
       const wrapper = mount(
         Vue.extend({
           components: {

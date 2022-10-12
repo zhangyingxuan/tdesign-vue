@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Vue from 'vue';
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Textarea from '@/src/textarea/index.ts';
 
 describe('Textarea', () => {
@@ -89,7 +90,7 @@ describe('Textarea', () => {
     });
 
     it('@change', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Textarea onChange={fn} />;
@@ -103,7 +104,7 @@ describe('Textarea', () => {
     });
 
     // it('@focus', () => {
-    //   const fn = jest.fn();
+    //   const fn = vi.fn();
     //   const wrapper = mount({
     //     render() {
     //       return <Textarea onFocus={fn} />;
@@ -117,7 +118,7 @@ describe('Textarea', () => {
     // });
 
     it('@blur', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Textarea onBlur={fn} />;
@@ -131,7 +132,7 @@ describe('Textarea', () => {
     });
 
     it('@keydown', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Textarea onKeydown={fn} />;
@@ -145,7 +146,7 @@ describe('Textarea', () => {
 
   describe('methods', () => {
     // it('focus', async () => {
-    //   const fn = jest.fn();
+    //   const fn = vi.fn();
     //   const wrapper = mount({
     //     render() {
     //       return <Textarea onFocus={fn} />;
@@ -160,7 +161,7 @@ describe('Textarea', () => {
     // });
 
     it('blur', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Textarea onBlur={fn} />;

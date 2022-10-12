@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Pagination from '@/src/pagination/index.ts';
 
 const defaultPaginationProps = {
@@ -292,7 +293,7 @@ describe('Pagination', () => {
 
   describe('@event', () => {
     it('@change', async () => {
-      const onChange = jest.fn();
+      const onChange = vi.fn();
       const wrapper = mount(Pagination, {
         propsData: {
           ...defaultPaginationProps,
@@ -325,7 +326,7 @@ describe('Pagination', () => {
     });
 
     it('@current-change', async () => {
-      const onCurrentChange = jest.fn();
+      const onCurrentChange = vi.fn();
       const wrapper = mount(Pagination, {
         propsData: {
           ...defaultPaginationProps,
@@ -344,7 +345,7 @@ describe('Pagination', () => {
     });
 
     it('@page-size-change', async () => {
-      const onPageSizeChange = jest.fn();
+      const onPageSizeChange = vi.fn();
       const wrapper = mount(Pagination, {
         propsData: {
           ...defaultPaginationProps,

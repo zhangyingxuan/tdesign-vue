@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Radio, { RadioGroup, RadioButton } from '@/src/radio/index.ts';
 
 // every component needs four parts: props/events/slots/functions.
@@ -41,7 +42,7 @@ describe('Radio', () => {
   // test events
   describe('@event', () => {
     it('Event passthrough ', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Radio onChange={fn}>Radio</Radio>;
@@ -172,7 +173,7 @@ describe('Radio RadioGroup', () => {
   // test events
   describe('@event', () => {
     it('Event passthrough ', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (

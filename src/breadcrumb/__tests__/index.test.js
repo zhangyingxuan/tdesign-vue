@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Breadcrumb from '@/src/breadcrumb/index.ts';
 import BreadcrumbItem from '@/src/breadcrumb/breadcrumb-item.tsx';
 
@@ -97,7 +98,7 @@ describe('Breadcrumb', () => {
   // test events
   describe('@event', () => {
     it('Event passthrough ', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (

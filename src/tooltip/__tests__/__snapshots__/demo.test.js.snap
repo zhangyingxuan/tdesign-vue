@@ -1,332 +1,378 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Tooltip Tooltip arrowVue demo works fine 1`] = `
+exports[`Tooltip > Tooltip arrowVue demo works fine 1`] = `
 <div>
-  <span>
-    <button
-      class="t-button t-size-m t-button--variant-outline t-button--theme-default"
-      type="button"
+  <t-tooltip
+    onvisiblechange="function () { [native code] }"
+  >
+    <t-button
+      variant="outline"
     >
-      <span
-        class="t-button__text"
-      >
-        带箭头文字提示
-      </span>
-    </button>
-     
-  </span>
+      带箭头文字提示
+    </t-button>
+    <div
+      slot="content"
+    >
+      这是自定义的带箭头文字内容
+    </div>
+  </t-tooltip>
 </div>
 `;
 
-exports[`Tooltip Tooltip baseVue demo works fine 1`] = `
+exports[`Tooltip > Tooltip baseVue demo works fine 1`] = `
 <div
   class="tdesign-tooltip-placement"
+  data-v-dd7c12c0=""
 >
-  <button
-    class="placement top center t-button t-size-m t-button--variant-outline t-button--theme-default"
-    style="width: 80px;"
-    type="button"
+  <t-tooltip
+    class="placement top center"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="top"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      style="width: 80px;"
+      variant="outline"
     >
        top 
-    </span>
-  </button>
-   
-  <button
-    class="placement top left t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement top left"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="top-left"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        top-left 
-    </span>
-  </button>
-   
-  <button
-    class="placement top right t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement top right"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="top-right"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        top-right 
-    </span>
-  </button>
-   
-  <button
-    class="placement bottom center t-button t-size-m t-button--variant-outline t-button--theme-default"
-    style="width: 80px;"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement bottom center"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="bottom"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      style="width: 80px;"
+      variant="outline"
     >
        bottom 
-    </span>
-  </button>
-   
-  <button
-    class="placement bottom left t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement bottom left"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="bottom-left"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        bottom-left 
-    </span>
-  </button>
-   
-  <button
-    class="placement bottom right t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement bottom right"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="bottom-right"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        bottom-right 
-    </span>
-  </button>
-   
-  <button
-    class="placement align t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement align"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="left"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        left 
-    </span>
-  </button>
-   
-  <button
-    class="placement top-align t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement top-align"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="left-top"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        left-top 
-    </span>
-  </button>
-   
-  <button
-    class="placement bottom-align t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement bottom-align"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="left-bottom"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        left-bottom 
-    </span>
-  </button>
-   
-  <button
-    class="placement right-full align t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement right-full align"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="right"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        right 
-    </span>
-  </button>
-   
-  <button
-    class="placement right-full top-align t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement right-full top-align"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="right-top"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        right-top 
-    </span>
-  </button>
-   
-  <button
-    class="placement right-full bottom-align t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    class="placement right-full bottom-align"
+    content="文字提示仅展示文本内容文字提示仅展示文本内容"
+    data-v-dd7c12c0=""
+    overlay-style="[object Object]"
+    placement="right-bottom"
+    show-arrow=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-dd7c12c0=""
+      variant="outline"
     >
        right-bottom 
-    </span>
-  </button>
+    </t-button>
+  </t-tooltip>
 </div>
 `;
 
-exports[`Tooltip Tooltip durationVue demo works fine 1`] = `
+exports[`Tooltip > Tooltip durationVue demo works fine 1`] = `
 <div>
-  <button
-    class="t-button t-size-m t-button--variant-text t-button--theme-default t-is-disabled"
-    disabled="disabled"
-    type="button"
-    visible="visible"
+  <t-tooltip
+    content="提示在 5 秒后消失"
+    default-visible=""
+    duration="5000"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      disabled=""
+      variant="text"
     >
       定时消失
-    </span>
-  </button>
-   
+    </t-button>
+  </t-tooltip>
   <!---->
 </div>
 `;
 
-exports[`Tooltip Tooltip mouseVue demo works fine 1`] = `
+exports[`Tooltip > Tooltip mouseVue demo works fine 1`] = `
 <div
   class="tdesign-tooltip-demo"
 >
-  <a
-    href="#"
+  <t-tooltip
+    content="文案比较长长长确实很长"
+    placement="mouse"
   >
-    文案比较长...
-  </a>
+    <a
+      href="#"
+    >
+      文案比较长...
+    </a>
+  </t-tooltip>
 </div>
 `;
 
-exports[`Tooltip Tooltip noArrowVue demo works fine 1`] = `
+exports[`Tooltip > Tooltip noArrowVue demo works fine 1`] = `
 <div>
-  <button
-    class="t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+  <t-tooltip
+    content="文字提示仅展示文本内容"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      variant="outline"
     >
       不带箭头的文字提示
-    </span>
-  </button>
+    </t-button>
+  </t-tooltip>
 </div>
 `;
 
-exports[`Tooltip Tooltip themeVue demo works fine 1`] = `
+exports[`Tooltip > Tooltip themeVue demo works fine 1`] = `
 <div
   class="tdesign-tooltip-demo"
 >
-  <button
-    class="t-button t-size-m t-button--variant-base t-button--theme-default"
-    type="button"
+  <t-tooltip
+    content="文字提示仅展示文本内容"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      theme="default"
     >
       default
-    </span>
-  </button>
-   
-  <button
-    class="t-button t-size-m t-button--variant-base t-button--theme-primary"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    theme="primary"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      theme="primary"
     >
       primary
-    </span>
-  </button>
-   
-  <button
-    class="t-button t-size-m t-button--variant-base t-button--theme-success"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    theme="success"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      theme="success"
     >
       success
-    </span>
-  </button>
-   
-  <button
-    class="t-button t-size-m t-button--variant-base t-button--theme-danger"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    theme="danger"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      theme="danger"
     >
       danger
-    </span>
-  </button>
-   
-  <button
-    class="t-button t-size-m t-button--variant-base t-button--theme-warning"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    theme="warning"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      theme="warning"
     >
       warning
-    </span>
-  </button>
-   
-  <button
-    class="t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    theme="light"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      variant="outline"
     >
       light
-    </span>
-  </button>
+    </t-button>
+  </t-tooltip>
 </div>
 `;
 
-exports[`Tooltip Tooltip triggerVue demo works fine 1`] = `
+exports[`Tooltip > Tooltip triggerVue demo works fine 1`] = `
 <div
   class="tdesign-tooltip-demo"
+  data-v-2b456f39=""
 >
-  <button
-    class="t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    data-v-2b456f39=""
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-2b456f39=""
+      variant="outline"
     >
       悬浮时触发（默认）
-    </span>
-  </button>
-   
-  <div
-    class="t-input__wrap"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    data-v-2b456f39=""
+    trigger="focus"
   >
-    <div
-      class="t-input t-size-m t-is-default"
-    >
-      <input
-        autocomplete=""
-        class="t-input__inner"
-        placeholder="获得焦点时触发"
-        type="text"
-        unselectable="off"
-      />
-    </div>
-  </div>
-   
-  <button
-    class="t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    <t-input
+      data-v-2b456f39=""
+      placeholder="获得焦点时触发"
+    />
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    data-v-2b456f39=""
+    trigger="click"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-2b456f39=""
+      variant="outline"
     >
       点击时触发
-    </span>
-  </button>
-   
-  <button
-    class="t-button t-size-m t-button--variant-outline t-button--theme-default"
-    type="button"
+    </t-button>
+  </t-tooltip>
+  <t-tooltip
+    content="文字提示仅展示文本内容"
+    data-v-2b456f39=""
+    trigger="context-menu"
   >
-    <span
-      class="t-button__text"
+    <t-button
+      data-v-2b456f39=""
+      variant="outline"
     >
       右击时触发
-    </span>
-  </button>
+    </t-button>
+  </t-tooltip>
 </div>
 `;

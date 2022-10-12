@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils';
 import Vue from 'vue';
+import { vi } from 'vitest';
 import Tabs from '@/src/tabs/index.ts';
 import TabPanel from '@/src/tabs/tab-panel.tsx';
 
@@ -76,7 +77,7 @@ describe('Tabs', () => {
   // test events
   describe('@event', () => {
     it('@add', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Tabs theme={'card'} addable={true} onAdd={fn} />;
@@ -88,7 +89,7 @@ describe('Tabs', () => {
       expect(tabs.emitted().add).toBeTruthy();
     });
     it('@change', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (
@@ -109,7 +110,7 @@ describe('Tabs', () => {
       expect(tabs.emitted().change).toBeTruthy();
     });
     it('@remove', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (
@@ -175,7 +176,7 @@ describe('Tabs', () => {
       expect(wrapper).toMatchSnapshot();
     });
     it('@remove on panel', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return (

@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import { InputNumber } from '@/src/input-number/index.ts';
 
 describe('InputNumber', () => {
@@ -12,7 +13,7 @@ describe('InputNumber', () => {
     });
 
     it(':disabled, function can not be call', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <InputNumber disabled onKeydown={fn}></InputNumber>;
@@ -204,7 +205,7 @@ describe('InputNumber', () => {
   // test events
   describe('@events', () => {
     it('@change', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <InputNumber onChange={fn} />;
@@ -218,7 +219,7 @@ describe('InputNumber', () => {
     });
 
     it('@blur', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <InputNumber on={{ blur: fn }} />;
@@ -231,7 +232,7 @@ describe('InputNumber', () => {
     });
 
     it('@keydown', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <InputNumber on={{ keydown: fn }} />;
@@ -244,7 +245,7 @@ describe('InputNumber', () => {
     });
 
     it('@keyup', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <InputNumber on={{ keyup: fn }} />;
@@ -257,7 +258,7 @@ describe('InputNumber', () => {
     });
 
     it('@keypress', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <InputNumber on={{ keypress: fn }} />;

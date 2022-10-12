@@ -1,223 +1,337 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Swiper Swiper baseVue demo works fine 1`] = `
+exports[`Swiper > Swiper baseVue demo works fine 1`] = `
 <div
   class="tdesign-demo-block--swiper"
 >
-  <div
-    class="t-swiper"
+  <t-swiper
+    duration="300"
+    interval="2000"
   >
-    <div
-      class="t-swiper__wrap t-swiper--inside"
-    >
+    <t-swiper-item>
       <div
-        class="t-swiper__content"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__container"
-          style="transform: translate3d(-0%, 0px, 0px);"
-        />
+        1
       </div>
-      <ul
-        class="t-swiper__navigation t-swiper__navigation-bars"
-      />
-    </div>
-  </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        2
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        3
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        4
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        5
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        6
+      </div>
+    </t-swiper-item>
+  </t-swiper>
 </div>
 `;
 
-exports[`Swiper Swiper cardVue demo works fine 1`] = `
+exports[`Swiper > Swiper cardVue demo works fine 1`] = `
 <div
   class="tdesign-demo-block--swiper"
 >
-  <div
-    class="t-swiper"
+  <t-swiper
+    height="280"
+    type="card"
   >
-    <div
-      class="t-swiper__wrap t-swiper--inside"
-    >
+    <t-swiper-item>
       <div
-        class="t-swiper__content t-swiper-card"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__container"
-          style="height: 280px;"
-        />
+        1
       </div>
-      <ul
-        class="t-swiper__navigation t-swiper__navigation-bars"
-      />
-    </div>
-  </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        2
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        3
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        4
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        5
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        6
+      </div>
+    </t-swiper-item>
+  </t-swiper>
 </div>
 `;
 
-exports[`Swiper Swiper currentVue demo works fine 1`] = `
+exports[`Swiper > Swiper currentVue demo works fine 1`] = `
 <div
   class="tdesign-demo-block--swiper"
 >
-  <div
-    class="t-swiper"
+  <t-swiper
+    current="0"
+    navigation="[object Object]"
   >
-    <div
-      class="t-swiper__wrap t-swiper--inside"
-    >
+    <t-swiper-item>
       <div
-        class="t-swiper__content"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__container"
-          style="transform: translate3d(-0%, 0px, 0px);"
-        />
+        1
       </div>
-      <ul
-        class="t-swiper__navigation t-swiper__navigation-bars"
-      />
-    </div>
-  </div>
-   
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        2
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        3
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        4
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        5
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        6
+      </div>
+    </t-swiper-item>
+  </t-swiper>
   <div
     class="tdesign-demo-block-row"
   >
-    <button
-      class="t-button t-size-s t-button--variant-base t-button--theme-primary"
-      type="button"
+    <t-button
+      size="small"
     >
-      <span
-        class="t-button__text"
-      >
-        
-      跳转到第 2 项
-    
-      </span>
-    </button>
+       跳转到第 2 项 
+    </t-button>
   </div>
 </div>
 `;
 
-exports[`Swiper Swiper fadeVue demo works fine 1`] = `
+exports[`Swiper > Swiper fadeVue demo works fine 1`] = `
 <div
   class="tdesign-demo-block--swiper"
 >
-  <div
-    class="t-swiper"
+  <t-swiper
+    animation="fade"
+    height="280"
   >
-    <div
-      class="t-swiper__wrap t-swiper--inside"
-    >
+    <t-swiper-item>
       <div
-        class="t-swiper__content t-swiper-fade"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__container"
-          style="height: 280px;"
-        />
+        1
       </div>
-      <ul
-        class="t-swiper__navigation t-swiper__navigation-bars"
-      />
-    </div>
-  </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        2
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        3
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        4
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        5
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        6
+      </div>
+    </t-swiper-item>
+  </t-swiper>
 </div>
 `;
 
-exports[`Swiper Swiper fractionVue demo works fine 1`] = `
+exports[`Swiper > Swiper fractionVue demo works fine 1`] = `
 <div
   class="tdesign-demo-block--swiper"
 >
-  <div
-    class="t-swiper"
+  <t-swiper
+    navigation="[object Object]"
   >
-    <div
-      class="t-swiper__wrap t-swiper--inside"
-    >
+    <t-swiper-item>
       <div
-        class="t-swiper__content"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__container"
-          style="transform: translate3d(-0%, 0px, 0px);"
-        />
+        1
       </div>
+    </t-swiper-item>
+    <t-swiper-item>
       <div
-        class="t-swiper__navigation t-swiper__navigation--fraction"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__arrow"
-        >
-          <div
-            class="t-swiper__arrow-left"
-          >
-            <svg
-              class="t-icon t-icon-chevron-left"
-              fill="none"
-              height="1em"
-              viewBox="0 0 16 16"
-              width="1em"
-            >
-              <path
-                d="M9.54 3.54l.92.92L6.92 8l3.54 3.54-.92.92L5.08 8l4.46-4.46z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-            </svg>
-          </div>
-          <div
-            class="t-swiper__navigation-text-fraction"
-          >
-            1/0
-          </div>
-          <div
-            class="t-swiper__arrow-right"
-          >
-            <svg
-              class="t-icon t-icon-chevron-right"
-              fill="none"
-              height="1em"
-              viewBox="0 0 16 16"
-              width="1em"
-            >
-              <path
-                d="M6.46 12.46l-.92-.92L9.08 8 5.54 4.46l.92-.92L10.92 8l-4.46 4.46z"
-                fill="currentColor"
-                fill-opacity="0.9"
-              />
-            </svg>
-          </div>
-        </div>
+        2
       </div>
-    </div>
-  </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        3
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        4
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        5
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        6
+      </div>
+    </t-swiper-item>
+  </t-swiper>
 </div>
 `;
 
-exports[`Swiper Swiper placementVue demo works fine 1`] = `
+exports[`Swiper > Swiper placementVue demo works fine 1`] = `
 <div
   class="tdesign-demo-block--swiper"
 >
-  <div
-    class="t-swiper"
+  <t-swiper
+    navigation="[object Object]"
   >
-    <div
-      class="t-swiper__wrap t-swiper--outside"
-    >
+    <t-swiper-item>
       <div
-        class="t-swiper__content"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__container"
-          style="transform: translate3d(-0%, 0px, 0px);"
-        />
+        1
       </div>
-      <ul
-        class="t-swiper__navigation t-swiper__navigation-bars"
-      />
-    </div>
-  </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        2
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        3
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        4
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        5
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        6
+      </div>
+    </t-swiper-item>
+  </t-swiper>
 </div>
 `;
 
-exports[`Swiper Swiper sizeVue demo works fine 1`] = `
+exports[`Swiper > Swiper sizeVue demo works fine 1`] = `
 <div>
   <div
     class="tdesign-demo-block--swiper"
@@ -226,28 +340,53 @@ exports[`Swiper Swiper sizeVue demo works fine 1`] = `
     <h3>
       large
     </h3>
-     
-    <div
-      class="t-swiper"
+    <t-swiper
+      navigation="[object Object]"
     >
-      <div
-        class="t-swiper__wrap t-swiper--inside t-swiper--large"
-      >
+      <t-swiper-item>
         <div
-          class="t-swiper__content"
+          class="demo-item demo-large"
         >
-          <div
-            class="t-swiper__container"
-            style="transform: translate3d(-0%, 0px, 0px);"
-          />
+          1
         </div>
-        <ul
-          class="t-swiper__navigation t-swiper__navigation-bars"
-        />
-      </div>
-    </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-large"
+        >
+          2
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-large"
+        >
+          3
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-large"
+        >
+          4
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-large"
+        >
+          5
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-large"
+        >
+          6
+        </div>
+      </t-swiper-item>
+    </t-swiper>
   </div>
-   
   <div
     class="tdesign-demo-block--swiper"
     style="width: 500px; margin-top: 20px;"
@@ -255,52 +394,107 @@ exports[`Swiper Swiper sizeVue demo works fine 1`] = `
     <h3>
       small
     </h3>
-     
-    <div
-      class="t-swiper"
+    <t-swiper
+      navigation="[object Object]"
     >
-      <div
-        class="t-swiper__wrap t-swiper--inside t-swiper--small"
-      >
+      <t-swiper-item>
         <div
-          class="t-swiper__content"
+          class="demo-item demo-small"
         >
-          <div
-            class="t-swiper__container"
-            style="transform: translate3d(-0%, 0px, 0px);"
-          />
+          1
         </div>
-        <ul
-          class="t-swiper__navigation t-swiper__navigation-bars"
-        />
-      </div>
-    </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-small"
+        >
+          2
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-small"
+        >
+          3
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-small"
+        >
+          4
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-small"
+        >
+          5
+        </div>
+      </t-swiper-item>
+      <t-swiper-item>
+        <div
+          class="demo-item demo-small"
+        >
+          6
+        </div>
+      </t-swiper-item>
+    </t-swiper>
   </div>
 </div>
 `;
 
-exports[`Swiper Swiper verticalVue demo works fine 1`] = `
+exports[`Swiper > Swiper verticalVue demo works fine 1`] = `
 <div
   class="tdesign-demo-block--swiper"
 >
-  <div
-    class="t-swiper"
+  <t-swiper
+    direction="vertical"
+    height="280"
+    navigation="[object Object]"
   >
-    <div
-      class="t-swiper__wrap t-swiper--inside t-swiper--vertical"
-    >
+    <t-swiper-item>
       <div
-        class="t-swiper__content"
+        class="demo-item"
       >
-        <div
-          class="t-swiper__container"
-          style="height: 280px; transform: translate3d(0, -0%, 0px);"
-        />
+        1
       </div>
-      <ul
-        class="t-swiper__navigation t-swiper__navigation-bars"
-      />
-    </div>
-  </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        2
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        3
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        4
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        5
+      </div>
+    </t-swiper-item>
+    <t-swiper-item>
+      <div
+        class="demo-item"
+      >
+        6
+      </div>
+    </t-swiper-item>
+  </t-swiper>
 </div>
 `;

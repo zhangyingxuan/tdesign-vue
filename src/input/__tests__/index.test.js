@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Vue from 'vue';
 import { mount } from '@vue/test-utils';
+import { vi, expect, it } from 'vitest';
 import Input from '@/src/input/index.ts';
 
 describe('Input', () => {
@@ -108,7 +109,7 @@ describe('Input', () => {
 
   describe('@event', () => {
     it('@change', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Input onChange={fn} />;
@@ -122,7 +123,7 @@ describe('Input', () => {
     });
 
     // it('@focus', () => {
-    //   const fn = jest.fn();
+    //   const fn = vi.fn();
     //   const wrapper = mount({
     //     render() {
     //       return <Input onFocus={fn} />;
@@ -136,7 +137,7 @@ describe('Input', () => {
     // });
 
     it('@blur', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Input onBlur={fn} />;
@@ -151,7 +152,7 @@ describe('Input', () => {
 
     // unit test is not right.
     // it('@keydown-enter', () => {
-    //   const fn = jest.fn();
+    //   const fn = vi.fn();
     //   const wrapper = mount({
     //     render() {
     //       return <Input {...{ on: { 'keydown-enter': fn } }} />;
@@ -166,7 +167,7 @@ describe('Input', () => {
 
   describe('methods', () => {
     // it('focus', async () => {
-    //   const fn = jest.fn();
+    //   const fn = vi.fn();
     //   const wrapper = mount({
     //     render() {
     //       return <Input onFocus={fn} />;
@@ -181,7 +182,7 @@ describe('Input', () => {
     // });
 
     it('blur', async () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <Input onBlur={fn} />;

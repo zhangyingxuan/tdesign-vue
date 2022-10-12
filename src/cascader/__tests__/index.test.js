@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import Cascader, { CascaderPanel } from '@/src/cascader/index.ts';
 
 const options = [
@@ -75,7 +76,7 @@ describe('Cascader', () => {
   describe('CascaderPanel', () => {
     describe('@event', () => {
       it('click', async () => {
-        const fn = jest.fn();
+        const fn = vi.fn();
         const wrapper = mount({
           render() {
             return <CascaderPanel options={options} onClick={fn} />;

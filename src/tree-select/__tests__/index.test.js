@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 import TreeSelect from '@/src/tree-select/index.ts';
 
 const options = [
@@ -216,7 +217,7 @@ describe('TreeSelect', () => {
   // test events
   describe('@event', () => {
     it('blur', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <TreeSelect data={options} filterable={true} onBlur={fn} />;
@@ -243,7 +244,7 @@ describe('TreeSelect', () => {
       expect(treeSelectWrapper.emitted().clear).toBeTruthy();
     });
     it('focus', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <TreeSelect data={options} filterable={true} onFocus={fn} />;
@@ -268,7 +269,7 @@ describe('TreeSelect', () => {
       expect(treeSelectWrapper.emitted().remove).toBeTruthy();
     });
     it('search', () => {
-      const fn = jest.fn();
+      const fn = vi.fn();
       const wrapper = mount({
         render() {
           return <TreeSelect data={options} filterable={true} onSearch={fn} />;

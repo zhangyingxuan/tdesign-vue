@@ -6,6 +6,25 @@ import ScriptSetup from 'unplugin-vue2-script-setup/vite';
 import tdocPlugin from './plugin-tdoc';
 import pwaConfig from './pwaConfig';
 
+// 单元测试相关配置
+const testConfig = {
+  include:
+    process.env.NODE_ENV === 'test-snap'
+      ? ['test/snap/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}']
+      : ['src/**/__tests__/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+  globals: true,
+  environment: 'jsdom',
+  testTimeout: 5000,
+  setupFiles: process.env.NODE_ENV === 'test-snap' ? path.resolve(__dirname, '../script/test/setup.js') : '',
+  transformMode: {
+    web: [/\.[jt]sx$/],
+  },
+  coverage: {
+    reporter: ['text', 'json', 'html'],
+    reportsDirectory: 'test/unit/coverage',
+  },
+};
+
 const publicPathMap = {
   preview: '/',
   intranet: '/vue/',
@@ -40,6 +59,7 @@ export default ({ mode }) =>
         strict: false,
       },
     },
+    test: testConfig,
     plugins: [
       createVuePlugin({
         include: /(\.md|\.vue)$/,

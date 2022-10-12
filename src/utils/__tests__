@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { vi } from 'vitest';
 // import Button from '@/src/button/index.ts';
 import { emitEvent } from '@/src/utils/event';
 
@@ -15,8 +16,8 @@ const Component = {
 describe('utils/event', () => {
   describe('emitEvent', () => {
     it('Emit event ', async () => {
-      const onClick = jest.fn();
-      const onValueChange = jest.fn();
+      const onClick = vi.fn();
+      const onValueChange = vi.fn();
 
       const wrapper = mount(Component, {
         listeners: {
@@ -33,8 +34,8 @@ describe('utils/event', () => {
     });
 
     it('Call event function ', async () => {
-      const handleValueChange = jest.fn();
-      const handleClick = jest.fn();
+      const handleValueChange = vi.fn();
+      const handleClick = vi.fn();
 
       const wrapper = mount(Component, {
         propsData: {

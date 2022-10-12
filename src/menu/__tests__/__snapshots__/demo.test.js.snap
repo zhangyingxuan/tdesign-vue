@@ -1,3636 +1,1100 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Menu Menu closableSideVue demo works fine 1`] = `
-<div
-  class="t-default-menu t-menu--light t-is-collapsed"
+exports[`Menu > Menu closableSideVue demo works fine 1`] = `
+<t-menu
+  collapsed="true"
+  defaultvalue="2-1"
   height="550px"
-  style="height: 100%; width: 64px;"
+  theme="light"
 >
-  <div
-    class="t-default-menu__inner"
+  <t-menu-item
+    value="item1"
   >
-    <div
-      class="t-menu__logo"
+     仪表盘 
+  </t-menu-item>
+  <t-submenu
+    value="2"
+  >
+    <span
+      slot="title"
     >
-      <span>
-        LOGO
-      </span>
-    </div>
-    <ul
-      class="t-menu narrow-scrollbar"
+      信息区
+    </span>
+    <t-menu-item
+      value="2-1"
     >
-       
-      <li
-        class="t-menu__item"
-      >
-        <svg
-          class="t-icon t-icon-dashboard"
-        >
-          <use
-            href="#t-icon-dashboard"
-          />
-        </svg>
-        <span
-          class="t-menu__content"
-        >
-          
-    仪表盘
-  
-        </span>
-      </li>
-       
-      <li
-        class="t-submenu"
-      >
-        <div
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            <span>
-              信息区
-            </span>
-          </span>
-          <svg
-            class="t-fake-arrow"
-            fill="none"
-            height="16"
-            style="transform: rotate(-90deg);"
-            viewBox="0 0 16 16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-              stroke="black"
-              stroke-opacity="0.9"
-              stroke-width="1.3"
-            />
-          </svg>
-        </div>
-        <div
-          class="t-menu__popup t-is-vertical"
-        >
-          <ul
-            class="t-menu__popup-wrapper"
-          >
-              
-            <li
-              class="t-menu__item t-is-active t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                菜单内容一
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                菜单内容二
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                菜单内容三
-              </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-       
-      <li
-        class="t-menu__item"
-      >
-        <svg
-          class="t-icon t-icon-play-circle"
-        >
-          <use
-            href="#t-icon-play-circle"
-          />
-        </svg>
-        <span
-          class="t-menu__content"
-        >
-          
-    视频区
-  
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled"
-      >
-        <svg
-          class="t-icon t-icon-edit-1"
-        >
-          <use
-            href="#t-icon-edit-1"
-          />
-        </svg>
-        <span
-          class="t-menu__content"
-        >
-          
-    资源区
-  
-        </span>
-      </li>
-    </ul>
-    <div
-      class="t-menu__operations"
+      菜单内容一
+    </t-menu-item>
+    <t-menu-item
+      value="2-2"
     >
-      <svg
-        class="t-menu__operations-icon t-icon t-icon-chevron-right"
-      >
-        <use
-          href="#t-icon-chevron-right"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
+      菜单内容二
+    </t-menu-item>
+    <t-menu-item
+      value="2-3"
+    >
+      菜单内容三
+    </t-menu-item>
+  </t-submenu>
+  <t-menu-item
+    value="item3"
+  >
+     视频区 
+  </t-menu-item>
+  <t-menu-item
+    disabled="true"
+    value="item4"
+  >
+     资源区 
+  </t-menu-item>
+</t-menu>
 `;
 
-exports[`Menu Menu customHeaderVue demo works fine 1`] = `
-<div
-  class="t-menu t-head-menu t-menu--dark"
+exports[`Menu > Menu customHeaderVue demo works fine 1`] = `
+<t-head-menu
+  data-v-92091f28=""
+  defaultvalue="item2"
+  theme="dark"
 >
-  <div
-    class="t-head-menu__inner"
+  <t-menu-item
+    data-v-92091f28=""
+    value="item1"
   >
-    <ul
-      class="t-menu"
-    >
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单1
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-active t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单2
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单3
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          禁用菜单
-        </span>
-      </li>
-    </ul>
-    <div
-      class="t-menu__operations"
-    >
-      <div
-        class="demo-box"
-      >
-        自定义内容区域
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu customSideVue demo works fine 1`] = `
-<div
-  class="t-default-menu t-menu--light"
-  style="height: 100%; width: 232px;"
->
-  <div
-    class="t-default-menu__inner"
-  >
-    <div
-      class="t-menu__logo"
-    >
-      <img
-        alt="logo"
-        src="https://www.tencent.com/img/index/menu_logo_hover.png"
-        width="136"
-      />
-    </div>
-    <ul
-      class="t-menu t-menu--scroll narrow-scrollbar"
-    >
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-active t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          禁用菜单
-        </span>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu doubleVue demo works fine 1`] = `
-<div
-  class="box"
->
-  <div
-    class="t-menu t-head-menu t-menu--light"
-  >
-    <div
-      class="t-head-menu__inner"
-    >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo_hover.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu"
-      >
-         
-        <li
-          class="t-submenu t-is-opened"
-        >
-          <div
-            class="t-menu__item t-is-opened"
-          >
-            <span>
-              菜单1
-            </span>
-          </div>
-          <ul
-            style="opacity: 0; width: 0px; height: 0px; overflow: hidden;"
-          >
-             
-            <li
-              class="t-menu__item t-is-active t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单1-1
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单1-2
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单1-3
-              </span>
-            </li>
-          </ul>
-        </li>
-         
-        <li
-          class="t-submenu"
-        >
-          <div
-            class="t-menu__item"
-          >
-            <span>
-              菜单2
-            </span>
-          </div>
-          <ul
-            style="opacity: 0; width: 0px; height: 0px; overflow: hidden;"
-          >
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单2-1
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单2-2
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单2-3
-              </span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
-      >
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-search"
-          >
-            <use
-              href="#t-icon-search"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-user"
-          >
-            <use
-              href="#t-icon-user"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-ellipsis"
-          >
-            <use
-              href="#t-icon-ellipsis"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-   
-  <div
-    class="t-menu t-head-menu t-menu--dark"
-    style="margin-top: 24px;"
-  >
-    <div
-      class="t-head-menu__inner"
-    >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu"
-      >
-         
-        <li
-          class="t-submenu t-is-opened"
-        >
-          <div
-            class="t-menu__item t-is-opened"
-          >
-            <span>
-              菜单1
-            </span>
-          </div>
-          <ul
-            style="opacity: 0; width: 0px; height: 0px; overflow: hidden;"
-          >
-             
-            <li
-              class="t-menu__item t-is-active t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单1-1
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单1-2
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单1-3
-              </span>
-            </li>
-          </ul>
-        </li>
-         
-        <li
-          class="t-submenu"
-        >
-          <div
-            class="t-menu__item"
-          >
-            <span>
-              菜单2
-            </span>
-          </div>
-          <ul
-            style="opacity: 0; width: 0px; height: 0px; overflow: hidden;"
-          >
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单2-1
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单2-2
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain"
-            >
-              <span
-                class="t-menu__content"
-              >
-                子菜单2-3
-              </span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
-      >
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-search"
-          >
-            <use
-              href="#t-icon-search"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-user"
-          >
-            <use
-              href="#t-icon-user"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-ellipsis"
-          >
-            <use
-              href="#t-icon-ellipsis"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu groupSideVue demo works fine 1`] = `
-<div
-  class="t-default-menu t-menu--light"
-  height="550px"
-  style="height: 100%; width: 232px;"
->
-  <div
-    class="t-default-menu__inner"
-  >
-    <div
-      class="t-menu__logo"
-    >
-      <img
-        alt="logo"
-        src="https://www.tencent.com/img/index/menu_logo_hover.png"
-        width="136"
-      />
-    </div>
-    <ul
-      class="t-menu t-menu--scroll narrow-scrollbar"
-    >
-       
-      <div
-        class="t-menu-group"
-      >
-        <div
-          class="t-menu-group__title"
-        >
-          分组类型1
-        </div>
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-             菜单内容 
-          </span>
-        </li>
-      </div>
-       
-      <div
-        class="t-menu-group"
-      >
-        <div
-          class="t-menu-group__title"
-        >
-          分组类型2
-        </div>
-        <li
-          class="t-menu__item t-is-active t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            菜单内容
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            菜单内容
-          </span>
-        </li>
-      </div>
-       
-      <div
-        class="t-menu-group"
-      >
-        <div
-          class="t-menu-group__title"
-        >
-          分组类型3
-        </div>
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            菜单内容
-          </span>
-        </li>
-      </div>
-    </ul>
-    <div
-      class="t-menu__operations"
-    >
-      <svg
-        class="t-menu__operations-icon t-icon t-icon-view-list"
-      >
-        <use
-          href="#t-icon-view-list"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu headMenuDarkVue demo works fine 1`] = `
-<div
-  class="t-menu t-head-menu t-menu--dark"
->
-  <div
-    class="t-head-menu__inner"
-  >
-    <div
-      class="t-menu__logo"
-    >
-      <img
-        alt="logo"
-        src="https://www.tencent.com/img/index/menu_logo.png"
-        width="136"
-      />
-    </div>
-    <ul
-      class="t-menu"
-    >
-       
-      <li
-        class="t-menu__item t-is-active t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          已选内容
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容一
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容二
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容三
-        </span>
-      </li>
-    </ul>
-    <div
-      class="t-menu__operations"
-    >
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-search"
-        >
-          <use
-            href="#t-icon-search"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-mail"
-        >
-          <use
-            href="#t-icon-mail"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-user"
-        >
-          <use
-            href="#t-icon-user"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-ellipsis"
-        >
-          <use
-            href="#t-icon-ellipsis"
-          />
-        </svg>
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu headMenuEmptyVue demo works fine 1`] = `
-<div
-  class="t-menu t-head-menu t-menu--light"
->
-  <div
-    class="t-head-menu__inner"
-  >
-    <ul
-      class="t-menu"
-    >
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容一
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-active t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          已选内容
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容二
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容三
-        </span>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu headMenuModeTileVue demo works fine 1`] = `
-<div
-  class="t-menu t-head-menu t-menu--dark"
->
-  <div
-    class="t-head-menu__inner"
-  >
-    <div
-      class="t-menu__logo"
-    >
-      <img
-        alt="logo"
-        src="https://www.tencent.com/img/index/menu_logo_hover.png"
-        width="136"
-      />
-    </div>
-    <ul
-      class="t-menu"
-    >
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          111菜单内容一
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-active t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          已选内容
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容二
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单内容三
-        </span>
-      </li>
-    </ul>
-    <div
-      class="t-menu__operations"
-    >
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-search"
-        >
-          <use
-            href="#t-icon-search"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-mail"
-        >
-          <use
-            href="#t-icon-mail"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-user"
-        >
-          <use
-            href="#t-icon-user"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-ellipsis"
-        >
-          <use
-            href="#t-icon-ellipsis"
-          />
-        </svg>
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu headMenuTileVue demo works fine 1`] = `
-<div
-  class="t-menu t-head-menu t-menu--dark"
->
-  <div
-    class="t-head-menu__inner"
-  >
-    <div
-      class="t-menu__logo"
-    >
-      <img
-        alt="logo"
-        src="https://www.tencent.com/img/index/menu_logo.png"
-        width="136"
-      />
-    </div>
-    <ul
-      class="t-menu"
-    >
-       
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          
     菜单1
-    
-          <li
-            class="t-submenu"
-          >
-            <div
-              class="t-menu__item"
-            />
-            <ul
-              style="opacity: 0; width: 0px; height: 0px; overflow: hidden;"
-            >
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单1-1
-      
-                </span>
-              </li>
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单1-2
-      
-                </span>
-              </li>
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单1-3
-      
-                </span>
-              </li>
-            </ul>
-          </li>
-        </span>
-      </li>
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          
+  </t-menu-item>
+  <t-menu-item
+    data-v-92091f28=""
+    value="item2"
+  >
     菜单2
-    
-          <li
-            class="t-submenu"
-          >
-            <div
-              class="t-menu__item"
-            />
-            <ul
-              style="opacity: 0; width: 0px; height: 0px; overflow: hidden;"
-            >
-              <li
-                class="t-menu__item t-is-active t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单2-1
-      
-                </span>
-              </li>
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单2-2
-      
-                </span>
-              </li>
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单2-3
-      
-                </span>
-              </li>
-            </ul>
-          </li>
-        </span>
-      </li>
-      <li
-        class="t-menu__item t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          
+  </t-menu-item>
+  <t-menu-item
+    data-v-92091f28=""
+    value="item3"
+  >
     菜单3
-    
-          <li
-            class="t-submenu"
-          >
-            <div
-              class="t-menu__item"
-            />
-            <ul
-              style="opacity: 0; width: 0px; height: 0px; overflow: hidden;"
-            >
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单3-1
-      
-                </span>
-              </li>
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单3-2
-      
-                </span>
-              </li>
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  
-        子菜单3-3
-      
-                </span>
-              </li>
-            </ul>
-          </li>
-        </span>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled t-menu__item--plain"
-      >
-        <span
-          class="t-menu__content"
-        >
-          菜单4
-        </span>
-      </li>
-    </ul>
-    <div
-      class="t-menu__operations"
-    >
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-search"
-        >
-          <use
-            href="#t-icon-search"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-mail"
-        >
-          <use
-            href="#t-icon-mail"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-user"
-        >
-          <use
-            href="#t-icon-user"
-          />
-        </svg>
-      </a>
-       
-      <a
-        href="javascript:;"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-ellipsis"
-        >
-          <use
-            href="#t-icon-ellipsis"
-          />
-        </svg>
-      </a>
-    </div>
-  </div>
-</div>
+  </t-menu-item>
+  <t-menu-item
+    data-v-92091f28=""
+    disabled="true"
+    value="item4"
+  >
+    禁用菜单
+  </t-menu-item>
+</t-head-menu>
 `;
 
-exports[`Menu Menu multiSideVue demo works fine 1`] = `
+exports[`Menu > Menu customSideVue demo works fine 1`] = `
+<t-menu
+  defaultvalue="item2"
+  theme="light"
+>
+  <t-menu-item
+    value="item1"
+  >
+    菜单内容
+  </t-menu-item>
+  <t-menu-item
+    value="item2"
+  >
+    菜单内容
+  </t-menu-item>
+  <t-menu-item
+    value="item3"
+  >
+    菜单内容
+  </t-menu-item>
+  <t-menu-item
+    disabled="true"
+    value="item4"
+  >
+    禁用菜单
+  </t-menu-item>
+</t-menu>
+`;
+
+exports[`Menu > Menu doubleVue demo works fine 1`] = `
 <div
   class="box"
 >
-  <div
-    class="t-default-menu t-menu--light"
-    height="550px"
-    style="height: 100%; width: 232px;"
+  <t-head-menu
+    defaultexpanded="1"
+    defaultvalue="1-1"
   >
-    <div
-      class="t-default-menu__inner"
+    <t-submenu
+      value="1"
     >
-      <ul
-        class="t-menu t-menu--scroll narrow-scrollbar"
+      <t-menu-item
+        value="1-1"
       >
-        <li
-          class="t-submenu t-is-opened"
-        >
-          <div
-            class="t-menu__item t-is-opened"
-          >
-            <svg
-              class="t-icon t-icon-mail"
-            >
-              <use
-                href="#t-icon-mail"
-              />
-            </svg>
-            <span
-              class="t-menu__content"
-            >
-              消息区
-            </span>
-            <svg
-              class="t-fake-arrow t-fake-arrow--active"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <ul
-            class="t-menu__sub t-is-opened"
-            style="--padding-left: 44px;"
-          >
-             
-            <li
-              class="t-submenu"
-            >
-              <div
-                class="t-menu__item"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  二级菜单
-                </span>
-                <svg
-                  class="t-fake-arrow"
-                  fill="none"
-                  height="16"
-                  style="transform: rotate(0deg);"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                    stroke="black"
-                    stroke-opacity="0.9"
-                    stroke-width="1.3"
-                  />
-                </svg>
-              </div>
-              <ul
-                class="t-menu__sub"
-                style="--padding-left: 60px;"
-              >
-                <li
-                  class="t-menu__item t-menu__item--plain t-submenu__item"
-                >
-                  <span
-                    class="t-menu__content"
-                  >
-                    三级菜单内容
-                  </span>
-                </li>
-                 
-                <li
-                  class="t-menu__item t-menu__item--plain t-submenu__item"
-                >
-                  <span
-                    class="t-menu__content"
-                  >
-                    三级菜单内容
-                  </span>
-                </li>
-                 
-                <li
-                  class="t-menu__item t-menu__item--plain t-submenu__item"
-                >
-                  <span
-                    class="t-menu__content"
-                  >
-                    三级菜单内容
-                  </span>
-                </li>
-              </ul>
-            </li>
-             
-            <li
-              class="t-submenu"
-            >
-              <div
-                class="t-menu__item"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  二级菜单
-                </span>
-                <svg
-                  class="t-fake-arrow"
-                  fill="none"
-                  height="16"
-                  style="transform: rotate(0deg);"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                    stroke="black"
-                    stroke-opacity="0.9"
-                    stroke-width="1.3"
-                  />
-                </svg>
-              </div>
-              <ul
-                class="t-menu__sub"
-                style="--padding-left: 60px;"
-              >
-                <li
-                  class="t-menu__item t-menu__item--plain t-submenu__item"
-                >
-                  <span
-                    class="t-menu__content"
-                  >
-                    三级菜单内容
-                  </span>
-                </li>
-                 
-                <li
-                  class="t-menu__item t-menu__item--plain t-submenu__item"
-                >
-                  <span
-                    class="t-menu__content"
-                  >
-                    三级菜单内容
-                  </span>
-                </li>
-                 
-                <li
-                  class="t-menu__item t-menu__item--plain t-submenu__item"
-                >
-                  <span
-                    class="t-menu__content"
-                  >
-                    三级菜单内容
-                  </span>
-                </li>
-              </ul>
-            </li>
-             
-            <li
-              class="t-menu__item t-is-active t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-          </ul>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-user-circle"
-          >
-            <use
-              href="#t-icon-user-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      个人中心
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-submenu t-is-disabled"
-        >
-          <div
-            class="t-menu__item t-is-disabled"
-          >
-            <svg
-              class="t-icon t-icon-play-circle"
-            >
-              <use
-                href="#t-icon-play-circle"
-              />
-            </svg>
-            <span
-              class="t-menu__content"
-            >
-              视频区
-            </span>
-            <svg
-              class="t-fake-arrow"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <ul
-            class="t-menu__sub"
-            style="--padding-left: 44px;"
-          >
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-          </ul>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-edit-1"
-          >
-            <use
-              href="#t-icon-edit-1"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      资源编辑
-    
-          </span>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
+        子菜单1-1
+      </t-menu-item>
+      <t-menu-item
+        value="1-2"
       >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-view-list"
-        >
-          <use
-            href="#t-icon-view-list"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-   
-  <div
-    class="t-default-menu t-menu--dark"
-    height="550px"
-    style="height: 100%; width: 232px; margin-left: 40px;"
-  >
-    <div
-      class="t-default-menu__inner"
+        子菜单1-2
+      </t-menu-item>
+      <t-menu-item
+        value="1-3"
+      >
+        子菜单1-3
+      </t-menu-item>
+    </t-submenu>
+    <t-submenu
+      value="2"
     >
-      <ul
-        class="t-menu t-menu--scroll narrow-scrollbar"
+      <t-menu-item
+        value="2-1"
       >
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-dashboard"
-          >
-            <use
-              href="#t-icon-dashboard"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      仪表盘
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-server"
-          >
-            <use
-              href="#t-icon-server"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      资源列表
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-root-list"
-          >
-            <use
-              href="#t-icon-root-list"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      根目录
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-submenu t-is-opened"
-        >
-          <div
-            class="t-menu__item t-is-opened"
-          >
-            <svg
-              class="t-icon t-icon-control-platform"
-            >
-              <use
-                href="#t-icon-control-platform"
-              />
-            </svg>
-            <span
-              class="t-menu__content"
-            >
-              调度平台
-            </span>
-            <svg
-              class="t-fake-arrow t-fake-arrow--active"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <ul
-            class="t-menu__sub t-is-opened"
-            style="--padding-left: 44px;"
-          >
-             
-            <li
-              class="t-menu__item t-is-active t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-          </ul>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-precise-monitor"
-          >
-            <use
-              href="#t-icon-precise-monitor"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      精准监控
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-submenu t-is-disabled"
-        >
-          <div
-            class="t-menu__item t-is-disabled"
-          >
-            <svg
-              class="t-icon t-icon-mail"
-            >
-              <use
-                href="#t-icon-mail"
-              />
-            </svg>
-            <span
-              class="t-menu__content"
-            >
-              消息区
-            </span>
-            <svg
-              class="t-fake-arrow"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <ul
-            class="t-menu__sub"
-            style="--padding-left: 44px;"
-          >
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-          </ul>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-user-circle"
-          >
-            <use
-              href="#t-icon-user-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      个人中心
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-submenu"
-        >
-          <div
-            class="t-menu__item"
-          >
-            <svg
-              class="t-icon t-icon-play-circle"
-            >
-              <use
-                href="#t-icon-play-circle"
-              />
-            </svg>
-            <span
-              class="t-menu__content"
-            >
-              视频区
-            </span>
-            <svg
-              class="t-fake-arrow"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <ul
-            class="t-menu__sub"
-            style="--padding-left: 44px;"
-          >
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-             
-            <li
-              class="t-menu__item t-menu__item--plain t-submenu__item"
-            >
-              <span
-                class="t-menu__content"
-              >
-                二级菜单内容
-              </span>
-            </li>
-          </ul>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-edit-1"
-          >
-            <use
-              href="#t-icon-edit-1"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      资源编辑
-    
-          </span>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
+        子菜单2-1
+      </t-menu-item>
+      <t-menu-item
+        value="2-2"
       >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-view-list"
-        >
-          <use
-            href="#t-icon-view-list"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Menu Menu multipleVue demo works fine 1`] = `
-<div
-  class="box"
->
-  <div
-    class="t-menu t-head-menu t-menu--light"
-  >
-    <div
-      class="t-head-menu__inner"
-    >
-      <div
-        class="t-menu__logo"
+        子菜单2-2
+      </t-menu-item>
+      <t-menu-item
+        value="2-3"
       >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo_hover.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu"
-      >
-         
-        <li
-          class="t-submenu"
-        >
-          <div
-            class="t-menu__item"
-          >
-            <span>
-              菜单1
-            </span>
-            <svg
-              class="t-fake-arrow"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <div
-            class="t-menu__popup"
-          >
-            <ul
-              class="t-menu__popup-wrapper"
-            >
-               
-              <li
-                class="t-submenu"
-              >
-                <div
-                  class="t-menu__item"
-                >
-                  子菜单1-1
-                  <svg
-                    class="t-fake-arrow"
-                    fill="none"
-                    height="16"
-                    style="transform: rotate(0deg);"
-                    viewBox="0 0 16 16"
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                      stroke="black"
-                      stroke-opacity="0.9"
-                      stroke-width="1.3"
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="t-menu__popup"
-                >
-                  <ul
-                    class="t-menu__popup-wrapper"
-                  >
-                    <li
-                      class="t-menu__item t-menu__item--plain"
-                    >
-                      <span
-                        class="t-menu__content"
-                      >
-                        子菜单1-1-1
-                      </span>
-                    </li>
-                     
-                    <li
-                      class="t-menu__item t-menu__item--plain"
-                    >
-                      <span
-                        class="t-menu__content"
-                      >
-                        子菜单1-1-2
-                      </span>
-                    </li>
-                     
-                    <li
-                      class="t-menu__item t-menu__item--plain"
-                    >
-                      <span
-                        class="t-menu__content"
-                      >
-                        子菜单1-1-3
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单1-2
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单1-3
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单1-4
-                </span>
-              </li>
-               
-              <li
-                class="t-submenu"
-              >
-                <div
-                  class="t-menu__item"
-                >
-                  子菜单1-5
-                  <svg
-                    class="t-fake-arrow"
-                    fill="none"
-                    height="16"
-                    style="transform: rotate(0deg);"
-                    viewBox="0 0 16 16"
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                      stroke="black"
-                      stroke-opacity="0.9"
-                      stroke-width="1.3"
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="t-menu__popup"
-                >
-                  <ul
-                    class="t-menu__popup-wrapper"
-                  >
-                    <li
-                      class="t-menu__item t-menu__item--plain"
-                    >
-                      <span
-                        class="t-menu__content"
-                      >
-                        子菜单1-5-1
-                      </span>
-                    </li>
-                     
-                    <li
-                      class="t-menu__item t-menu__item--plain"
-                    >
-                      <span
-                        class="t-menu__content"
-                      >
-                        子菜单1-5-2
-                      </span>
-                    </li>
-                     
-                    <li
-                      class="t-menu__item t-menu__item--plain"
-                    >
-                      <span
-                        class="t-menu__content"
-                      >
-                        子菜单1-5-3
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </li>
-         
-        <li
-          class="t-submenu"
-        >
-          <div
-            class="t-menu__item"
-          >
-            菜单2
-            <svg
-              class="t-fake-arrow"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <div
-            class="t-menu__popup"
-          >
-            <ul
-              class="t-menu__popup-wrapper"
-            >
-              <li
-                class="t-menu__item t-is-active t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单2-1
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单2-2
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单2-3
-                </span>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
-      >
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-search"
-          >
-            <use
-              href="#t-icon-search"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-user"
-          >
-            <use
-              href="#t-icon-user"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-ellipsis"
-          >
-            <use
-              href="#t-icon-ellipsis"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-   
-  <div
-    class="t-menu t-head-menu t-menu--dark"
+        子菜单2-3
+      </t-menu-item>
+    </t-submenu>
+  </t-head-menu>
+  <t-head-menu
+    defaultvalue="1-1"
+    expanded="1"
     style="margin-top: 24px;"
+    theme="dark"
   >
-    <div
-      class="t-head-menu__inner"
+    <t-submenu
+      value="1"
     >
-      <div
-        class="t-menu__logo"
+      <t-menu-item
+        value="1-1"
       >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu"
+        子菜单1-1
+      </t-menu-item>
+      <t-menu-item
+        value="1-2"
       >
-         
-        <li
-          class="t-submenu"
-        >
-          <div
-            class="t-menu__item"
-          >
-            <span>
-              菜单1
-            </span>
-            <svg
-              class="t-fake-arrow"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <div
-            class="t-menu__popup"
-          >
-            <ul
-              class="t-menu__popup-wrapper"
-            >
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单1-1
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单1-2
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单1-3
-                </span>
-              </li>
-            </ul>
-          </div>
-        </li>
-         
-        <li
-          class="t-submenu"
-        >
-          <div
-            class="t-menu__item"
-          >
-            <span>
-              菜单2
-            </span>
-            <svg
-              class="t-fake-arrow"
-              fill="none"
-              height="16"
-              style="transform: rotate(0deg);"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-                stroke="black"
-                stroke-opacity="0.9"
-                stroke-width="1.3"
-              />
-            </svg>
-          </div>
-          <div
-            class="t-menu__popup"
-          >
-            <ul
-              class="t-menu__popup-wrapper"
-            >
-               
-              <li
-                class="t-menu__item t-is-active t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单2-1
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单2-2
-                </span>
-              </li>
-               
-              <li
-                class="t-menu__item t-menu__item--plain"
-              >
-                <span
-                  class="t-menu__content"
-                >
-                  子菜单2-3
-                </span>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
+        子菜单1-2
+      </t-menu-item>
+      <t-menu-item
+        value="1-3"
       >
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-search"
-          >
-            <use
-              href="#t-icon-search"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-user"
-          >
-            <use
-              href="#t-icon-user"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-ellipsis"
-          >
-            <use
-              href="#t-icon-ellipsis"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
+        子菜单1-3
+      </t-menu-item>
+    </t-submenu>
+    <t-submenu
+      value="2"
+    >
+      <t-menu-item
+        value="2-1"
+      >
+        子菜单2-1
+      </t-menu-item>
+      <t-menu-item
+        value="2-2"
+      >
+        子菜单2-2
+      </t-menu-item>
+      <t-menu-item
+        value="2-3"
+      >
+        子菜单2-3
+      </t-menu-item>
+    </t-submenu>
+  </t-head-menu>
 </div>
 `;
 
-exports[`Menu Menu popupSideVue demo works fine 1`] = `
-<div
-  class="t-default-menu t-menu--light"
-  style="height: 100%; width: 232px;"
+exports[`Menu > Menu groupSideVue demo works fine 1`] = `
+<t-menu
+  defaultvalue="item2"
+  height="550px"
+  theme="light"
 >
-  <div
-    class="t-default-menu__inner"
+  <t-menu-group
+    title="分组类型1"
   >
-    <div
-      class="t-menu__logo"
+    <t-menu-item
+      value="item1"
     >
-      <img
-        alt="logo"
-        src="https://www.tencent.com/img/index/menu_logo_hover.png"
-        width="136"
-      />
-    </div>
-    <ul
-      class="t-menu t-menu--scroll narrow-scrollbar"
+       菜单内容 
+    </t-menu-item>
+  </t-menu-group>
+  <t-menu-group
+    title="分组类型2"
+  >
+    <t-menu-item
+      value="item2"
     >
-       
-      <li
-        class="t-menu__item"
-      >
-        <svg
-          class="t-icon t-icon-dashboard"
-        >
-          <use
-            href="#t-icon-dashboard"
-          />
-        </svg>
-        <span
-          class="t-menu__content"
-        >
-          
-    仪表盘
-  
-        </span>
-      </li>
-       
-      <li
-        class="t-submenu t-is-opened"
-      >
-        <div
-          class="t-menu__item t-is-opened"
-        >
-          <svg
-            class="t-icon t-icon-user-circle"
-          >
-            <use
-              href="#t-icon-user-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            <span>
-              个人中心
-            </span>
-          </span>
-          <svg
-            class="t-fake-arrow t-fake-arrow--active"
-            fill="none"
-            height="16"
-            style="transform: rotate(0deg);"
-            viewBox="0 0 16 16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-              stroke="black"
-              stroke-opacity="0.9"
-              stroke-width="1.3"
-            />
-          </svg>
-        </div>
-        <ul
-          class="t-menu__sub t-is-opened"
-          style="--padding-left: 44px;"
-        >
-            
-          <li
-            class="t-menu__item t-is-active t-menu__item--plain t-submenu__item"
-          >
-            <span
-              class="t-menu__content"
-            >
-              子菜单内容一
-            </span>
-          </li>
-           
-          <li
-            class="t-menu__item t-menu__item--plain t-submenu__item"
-          >
-            <span
-              class="t-menu__content"
-            >
-              子菜单内容二
-            </span>
-          </li>
-           
-          <li
-            class="t-menu__item t-menu__item--plain t-submenu__item"
-          >
-            <span
-              class="t-menu__content"
-            >
-              子菜单内容三
-            </span>
-          </li>
-        </ul>
-      </li>
-       
-      <li
-        class="t-submenu"
-      >
-        <div
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-root-list"
-          >
-            <use
-              href="#t-icon-root-list"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            <span>
-              根目录
-            </span>
-          </span>
-          <svg
-            class="t-fake-arrow"
-            fill="none"
-            height="16"
-            style="transform: rotate(0deg);"
-            viewBox="0 0 16 16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3.75 5.7998L7.99274 10.0425L12.2361 5.79921"
-              stroke="black"
-              stroke-opacity="0.9"
-              stroke-width="1.3"
-            />
-          </svg>
-        </div>
-        <ul
-          class="t-menu__sub"
-          style="--padding-left: 44px;"
-        >
-            
-          <li
-            class="t-menu__item t-menu__item--plain t-submenu__item"
-          >
-            <span
-              class="t-menu__content"
-            >
-              子菜单内容一
-            </span>
-          </li>
-           
-          <li
-            class="t-menu__item t-menu__item--plain t-submenu__item"
-          >
-            <span
-              class="t-menu__content"
-            >
-              子菜单内容二
-            </span>
-          </li>
-           
-          <li
-            class="t-menu__item t-menu__item--plain t-submenu__item"
-          >
-            <span
-              class="t-menu__content"
-            >
-              子菜单内容三
-            </span>
-          </li>
-        </ul>
-      </li>
-       
-      <li
-        class="t-menu__item t-is-disabled"
-      >
-        <svg
-          class="t-icon t-icon-server"
-        >
-          <use
-            href="#t-icon-server"
-          />
-        </svg>
-        <span
-          class="t-menu__content"
-        >
-          
-    资源列表
-  
-        </span>
-      </li>
-    </ul>
-    <div
-      class="t-menu__operations"
+      菜单内容
+    </t-menu-item>
+    <t-menu-item
+      value="item3"
     >
-      <svg
-        class="t-menu__operations-icon t-icon t-icon-view-list"
+      菜单内容
+    </t-menu-item>
+  </t-menu-group>
+  <t-menu-group
+    title="分组类型3"
+  >
+    <t-menu-item
+      value="item4"
+    >
+      菜单内容
+    </t-menu-item>
+  </t-menu-group>
+</t-menu>
+`;
+
+exports[`Menu > Menu headMenuDarkVue demo works fine 1`] = `
+<t-head-menu
+  defaultvalue="item1"
+  theme="dark"
+>
+  <t-menu-item
+    value="item1"
+  >
+    已选内容
+  </t-menu-item>
+  <t-menu-item
+    value="item2"
+  >
+    菜单内容一
+  </t-menu-item>
+  <t-menu-item
+    value="item3"
+  >
+    菜单内容二
+  </t-menu-item>
+  <t-menu-item
+    disabled="true"
+    value="item4"
+  >
+    菜单内容三
+  </t-menu-item>
+</t-head-menu>
+`;
+
+exports[`Menu > Menu headMenuEmptyVue demo works fine 1`] = `
+<t-head-menu
+  defaultvalue="item2"
+  theme="light"
+>
+  <t-menu-item
+    value="item1"
+  >
+    菜单内容一
+  </t-menu-item>
+  <t-menu-item
+    value="item2"
+  >
+    已选内容
+  </t-menu-item>
+  <t-menu-item
+    value="item3"
+  >
+    菜单内容二
+  </t-menu-item>
+  <t-menu-item
+    disabled="true"
+    value="item4"
+  >
+    菜单内容三
+  </t-menu-item>
+</t-head-menu>
+`;
+
+exports[`Menu > Menu headMenuModeTileVue demo works fine 1`] = `
+<t-head-menu
+  defaultvalue="item2"
+  theme="dark"
+>
+  <t-menu-item
+    value="item1"
+  >
+    111菜单内容一
+  </t-menu-item>
+  <t-menu-item
+    value="item2"
+  >
+    已选内容
+  </t-menu-item>
+  <t-menu-item
+    value="item3"
+  >
+    菜单内容二
+  </t-menu-item>
+  <t-menu-item
+    disabled="true"
+    value="item4"
+  >
+    菜单内容三
+  </t-menu-item>
+</t-head-menu>
+`;
+
+exports[`Menu > Menu headMenuTileVue demo works fine 1`] = `
+<t-head-menu
+  theme="dark"
+  value="2-1"
+>
+  <t-menu-item
+    value="1"
+  >
+     菜单1 
+    <t-submenu>
+      <t-menu-item
+        value="1-1"
       >
-        <use
-          href="#t-icon-view-list"
-        />
-      </svg>
-    </div>
-  </div>
+         子菜单1-1 
+      </t-menu-item>
+      <t-menu-item
+        value="1-2"
+      >
+         子菜单1-2 
+      </t-menu-item>
+      <t-menu-item
+        value="1-3"
+      >
+         子菜单1-3 
+      </t-menu-item>
+    </t-submenu>
+  </t-menu-item>
+  <t-menu-item
+    value="2"
+  >
+     菜单2 
+    <t-submenu>
+      <t-menu-item
+        value="2-1"
+      >
+         子菜单2-1 
+      </t-menu-item>
+      <t-menu-item
+        value="2-2"
+      >
+         子菜单2-2 
+      </t-menu-item>
+      <t-menu-item
+        value="2-3"
+      >
+         子菜单2-3 
+      </t-menu-item>
+    </t-submenu>
+  </t-menu-item>
+  <t-menu-item
+    value="3"
+  >
+     菜单3 
+    <t-submenu>
+      <t-menu-item
+        value="3-1"
+      >
+         子菜单3-1 
+      </t-menu-item>
+      <t-menu-item
+        value="3-2"
+      >
+         子菜单3-2 
+      </t-menu-item>
+      <t-menu-item
+        value="3-3"
+      >
+         子菜单3-3 
+      </t-menu-item>
+    </t-submenu>
+  </t-menu-item>
+  <t-menu-item
+    disabled="true"
+    value="4"
+  >
+    菜单4
+  </t-menu-item>
+</t-head-menu>
+`;
+
+exports[`Menu > Menu multiSideVue demo works fine 1`] = `
+<div
+  class="box"
+>
+  <t-menu
+    defaultexpanded="2,3"
+    defaultvalue="3-2"
+    expandmutex=""
+    height="550px"
+    theme="light"
+  >
+    <t-submenu
+      title="消息区"
+      value="3"
+    >
+      <t-submenu
+        title="二级菜单"
+        value="3-1"
+      >
+        <t-menu-item
+          value="3-1-1"
+        >
+          三级菜单内容
+        </t-menu-item>
+        <t-menu-item
+          value="3-1-2"
+        >
+          三级菜单内容
+        </t-menu-item>
+        <t-menu-item
+          value="3-1-3"
+        >
+          三级菜单内容
+        </t-menu-item>
+      </t-submenu>
+      <t-submenu
+        title="二级菜单"
+        value="3-5"
+      >
+        <t-menu-item
+          value="3-5-1"
+        >
+          三级菜单内容
+        </t-menu-item>
+        <t-menu-item
+          value="3-5-2"
+        >
+          三级菜单内容
+        </t-menu-item>
+        <t-menu-item
+          value="3-5-3"
+        >
+          三级菜单内容
+        </t-menu-item>
+      </t-submenu>
+      <t-menu-item
+        value="3-2"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="3-3"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="3-4"
+      >
+        二级菜单内容
+      </t-menu-item>
+    </t-submenu>
+    <t-menu-item
+      value="user-circle"
+    >
+       个人中心 
+    </t-menu-item>
+    <t-submenu
+      disabled=""
+      title="视频区"
+      value="4"
+    >
+      <t-menu-item
+        value="4-1"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="4-2"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="4-3"
+      >
+        二级菜单内容
+      </t-menu-item>
+    </t-submenu>
+    <t-menu-item
+      value="edit1"
+    >
+       资源编辑 
+    </t-menu-item>
+  </t-menu>
+  <t-menu
+    defaultvalue="2-1"
+    expanded="2"
+    height="550px"
+    style="margin-left: 40px;"
+    theme="dark"
+  >
+    <t-menu-item
+      value="item1"
+    >
+       仪表盘 
+    </t-menu-item>
+    <t-menu-item
+      value="resource"
+    >
+       资源列表 
+    </t-menu-item>
+    <t-menu-item
+      value="root"
+    >
+       根目录 
+    </t-menu-item>
+    <t-submenu
+      title="调度平台"
+      value="2"
+    >
+      <t-menu-item
+        value="2-1"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="2-2"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="2-3"
+      >
+        二级菜单内容
+      </t-menu-item>
+    </t-submenu>
+    <t-menu-item
+      value="precise-monitor"
+    >
+       精准监控 
+    </t-menu-item>
+    <t-submenu
+      disabled=""
+      title="消息区"
+      value="3"
+    >
+      <t-menu-item
+        value="3-1"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="3-2"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="3-3"
+      >
+        二级菜单内容
+      </t-menu-item>
+    </t-submenu>
+    <t-menu-item
+      value="user-circle"
+    >
+       个人中心 
+    </t-menu-item>
+    <t-submenu
+      title="视频区"
+      value="4"
+    >
+      <t-menu-item
+        value="4-1"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="4-2"
+      >
+        二级菜单内容
+      </t-menu-item>
+      <t-menu-item
+        value="4-3"
+      >
+        二级菜单内容
+      </t-menu-item>
+    </t-submenu>
+    <t-menu-item
+      value="edit1"
+    >
+       资源编辑 
+    </t-menu-item>
+  </t-menu>
 </div>
 `;
 
-exports[`Menu Menu sideMenuWidthVue demo works fine 1`] = `
+exports[`Menu > Menu multipleVue demo works fine 1`] = `
+<div
+  class="box"
+>
+  <t-head-menu
+    defaultvalue="2-1"
+    expandtype="popup"
+  >
+    <t-submenu
+      value="1"
+    >
+      <t-submenu
+        title="子菜单1-1"
+        value="1-0"
+      >
+        <t-menu-item
+          value="1-1-1"
+        >
+          子菜单1-1-1
+        </t-menu-item>
+        <t-menu-item
+          value="1-1-2"
+        >
+          子菜单1-1-2
+        </t-menu-item>
+        <t-menu-item
+          value="1-1-3"
+        >
+          子菜单1-1-3
+        </t-menu-item>
+      </t-submenu>
+      <t-menu-item
+        value="1-2"
+      >
+        子菜单1-2
+      </t-menu-item>
+      <t-menu-item
+        value="1-3"
+      >
+        子菜单1-3
+      </t-menu-item>
+      <t-menu-item
+        value="1-4"
+      >
+        子菜单1-4
+      </t-menu-item>
+      <t-submenu
+        title="子菜单1-5"
+        value="1-5"
+      >
+        <t-menu-item
+          value="1-5-1"
+        >
+          子菜单1-5-1
+        </t-menu-item>
+        <t-menu-item
+          value="1-5-2"
+        >
+          子菜单1-5-2
+        </t-menu-item>
+        <t-menu-item
+          value="1-5-3"
+        >
+          子菜单1-5-3
+        </t-menu-item>
+      </t-submenu>
+    </t-submenu>
+    <t-submenu
+      title="菜单2"
+      value="2"
+    >
+      <t-menu-item
+        value="2-1"
+      >
+        子菜单2-1
+      </t-menu-item>
+      <t-menu-item
+        value="2-2"
+      >
+        子菜单2-2
+      </t-menu-item>
+      <t-menu-item
+        value="2-3"
+      >
+        子菜单2-3
+      </t-menu-item>
+    </t-submenu>
+  </t-head-menu>
+  <t-head-menu
+    defaultvalue="2-1"
+    expandtype="popup"
+    style="margin-top: 24px;"
+    theme="dark"
+  >
+    <t-submenu
+      value="1"
+    >
+      <t-menu-item
+        value="1-1"
+      >
+        子菜单1-1
+      </t-menu-item>
+      <t-menu-item
+        value="1-2"
+      >
+        子菜单1-2
+      </t-menu-item>
+      <t-menu-item
+        value="1-3"
+      >
+        子菜单1-3
+      </t-menu-item>
+    </t-submenu>
+    <t-submenu
+      value="2"
+    >
+      <t-menu-item
+        value="2-1"
+      >
+        子菜单2-1
+      </t-menu-item>
+      <t-menu-item
+        value="2-2"
+      >
+        子菜单2-2
+      </t-menu-item>
+      <t-menu-item
+        value="2-3"
+      >
+        子菜单2-3
+      </t-menu-item>
+    </t-submenu>
+  </t-head-menu>
+</div>
+`;
+
+exports[`Menu > Menu popupSideVue demo works fine 1`] = `
+<t-menu
+  defaultvalue="2-1"
+  expanded="2"
+  expandmutex=""
+  theme="light"
+>
+  <t-menu-item
+    value="item1"
+  >
+     仪表盘 
+  </t-menu-item>
+  <t-submenu
+    value="2"
+  >
+    <t-menu-item
+      value="2-1"
+    >
+      子菜单内容一
+    </t-menu-item>
+    <t-menu-item
+      value="2-2"
+    >
+      子菜单内容二
+    </t-menu-item>
+    <t-menu-item
+      value="2-3"
+    >
+      子菜单内容三
+    </t-menu-item>
+  </t-submenu>
+  <t-submenu
+    value="3"
+  >
+    <t-menu-item
+      value="3-1"
+    >
+      子菜单内容一
+    </t-menu-item>
+    <t-menu-item
+      value="3-2"
+    >
+      子菜单内容二
+    </t-menu-item>
+    <t-menu-item
+      value="3-3"
+    >
+      子菜单内容三
+    </t-menu-item>
+  </t-submenu>
+  <t-menu-item
+    disabled="true"
+    value="item4"
+  >
+     资源列表 
+  </t-menu-item>
+</t-menu>
+`;
+
+exports[`Menu > Menu sideMenuWidthVue demo works fine 1`] = `
 <div
   class="wrapper"
 >
-  <div
-    class="t-default-menu t-menu--light"
+  <t-menu
+    defaultvalue="item2"
     height="550px"
-    style="height: 100%; width: 200px; margin-right: 20px;"
+    style="margin-right: 20px;"
+    width="200px"
   >
-    <div
-      class="t-default-menu__inner"
+    <t-menu-item
+      value="item1"
     >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo_hover.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu t-menu--scroll narrow-scrollbar"
-      >
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            仪表盘
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-is-active t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            信息区
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            视频区
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            资源区
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-   
-  <div
-    class="t-default-menu t-menu--light"
-    height="550px"
-    style="height: 100%; width: 300px;"
-  >
-    <div
-      class="t-default-menu__inner"
-    >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo_hover.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu t-menu--scroll narrow-scrollbar"
-      >
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-dashboard"
-          >
-            <use
-              href="#t-icon-dashboard"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
       仪表盘
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item2"
+    >
       信息区
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-play-circle"
-          >
-            <use
-              href="#t-icon-play-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item3"
+    >
       视频区
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-is-disabled"
-        >
-          <svg
-            class="t-icon t-icon-edit-1"
-          >
-            <use
-              href="#t-icon-edit-1"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item4"
+    >
       资源区
-    
-          </span>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
-      >
-        <svg
-          class="t-menu__operations-icon t-icon t-icon-view-list"
-        >
-          <use
-            href="#t-icon-view-list"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
+    </t-menu-item>
+  </t-menu>
+  <t-menu
+    defaultvalue="item2"
+    height="550px"
+    width="300px,150"
+  >
+    <t-menu-item
+      value="item1"
+    >
+       仪表盘 
+    </t-menu-item>
+    <t-menu-item
+      value="2"
+    >
+       信息区 
+    </t-menu-item>
+    <t-menu-item
+      value="item3"
+    >
+       视频区 
+    </t-menu-item>
+    <t-menu-item
+      disabled="true"
+      value="item4"
+    >
+       资源区 
+    </t-menu-item>
+  </t-menu>
 </div>
 `;
 
-exports[`Menu Menu singleSideVue demo works fine 1`] = `
+exports[`Menu > Menu singleSideVue demo works fine 1`] = `
 <div
   class="box"
 >
-  <div
-    class="t-default-menu t-menu--light"
+  <t-menu
+    defaultvalue="item1"
     height="550px"
-    style="height: 100%; width: 232px; margin-right: 40px;"
+    style="margin-right: 40px;"
+    theme="light"
   >
-    <div
-      class="t-default-menu__inner"
+    <t-menu-item
+      value="item1"
     >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo_hover.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu t-menu--scroll narrow-scrollbar"
-      >
-         
-        <li
-          class="t-menu__item t-is-active t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            仪表盘
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            资源列表
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            根目录
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-is-disabled t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            调度平台
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            精准监控
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            消息区
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            个人中心
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            视频区
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            资源编辑
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-   
-  <div
-    class="t-default-menu t-menu--light"
-    height="550px"
-    style="height: 100%; width: 232px; margin-right: 40px;"
-  >
-    <div
-      class="t-default-menu__inner"
-    >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo_hover.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu t-menu--scroll narrow-scrollbar"
-      >
-         
-        <li
-          class="t-menu__item t-is-active"
-        >
-          <svg
-            class="t-icon t-icon-dashboard"
-          >
-            <use
-              href="#t-icon-dashboard"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
       仪表盘
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-server"
-          >
-            <use
-              href="#t-icon-server"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      资源列表
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-root-list"
-          >
-            <use
-              href="#t-icon-root-list"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      根目录
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-control-platform"
-          >
-            <use
-              href="#t-icon-control-platform"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      调度平台
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-precise-monitor"
-          >
-            <use
-              href="#t-icon-precise-monitor"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      精准监控
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      消息区
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-user-circle"
-          >
-            <use
-              href="#t-icon-user-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      个人中心
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-play-circle"
-          >
-            <use
-              href="#t-icon-play-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      视频区
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-edit-1"
-          >
-            <use
-              href="#t-icon-edit-1"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      资源编辑
-    
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-   
-  <div
-    class="t-default-menu t-menu--dark"
-    height="550px"
-    style="height: 100%; width: 232px;"
-  >
-    <div
-      class="t-default-menu__inner"
+    </t-menu-item>
+    <t-menu-item
+      value="item2"
     >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu t-menu--scroll narrow-scrollbar"
-      >
-         
-        <li
-          class="t-menu__item t-is-active"
-        >
-          <svg
-            class="t-icon t-icon-dashboard"
-          >
-            <use
-              href="#t-icon-dashboard"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
-      仪表盘
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-server"
-          >
-            <use
-              href="#t-icon-server"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
       资源列表
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-root-list"
-          >
-            <use
-              href="#t-icon-root-list"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item3"
+    >
       根目录
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-control-platform"
-          >
-            <use
-              href="#t-icon-control-platform"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      disabled="true"
+      value="item4"
+    >
       调度平台
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-precise-monitor"
-          >
-            <use
-              href="#t-icon-precise-monitor"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item5"
+    >
       精准监控
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item6"
+    >
       消息区
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-user-circle"
-          >
-            <use
-              href="#t-icon-user-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item7"
+    >
       个人中心
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-play-circle"
-          >
-            <use
-              href="#t-icon-play-circle"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item8"
+    >
       视频区
-    
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item"
-        >
-          <svg
-            class="t-icon t-icon-edit-1"
-          >
-            <use
-              href="#t-icon-edit-1"
-            />
-          </svg>
-          <span
-            class="t-menu__content"
-          >
-            
+    </t-menu-item>
+    <t-menu-item
+      value="item9"
+    >
       资源编辑
-    
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
+    </t-menu-item>
+  </t-menu>
+  <t-menu
+    defaultvalue="dashboard"
+    height="550px"
+    style="margin-right: 40px;"
+    theme="light"
+  >
+    <t-menu-item
+      value="dashboard"
+    >
+       仪表盘 
+    </t-menu-item>
+    <t-menu-item
+      value="resource"
+    >
+       资源列表 
+    </t-menu-item>
+    <t-menu-item
+      value="root"
+    >
+       根目录 
+    </t-menu-item>
+    <t-menu-item
+      value="control-platform"
+    >
+       调度平台 
+    </t-menu-item>
+    <t-menu-item
+      value="precise-monitor"
+    >
+       精准监控 
+    </t-menu-item>
+    <t-menu-item
+      value="mail"
+    >
+       消息区 
+    </t-menu-item>
+    <t-menu-item
+      value="user-circle"
+    >
+       个人中心 
+    </t-menu-item>
+    <t-menu-item
+      value="play-circle"
+    >
+       视频区 
+    </t-menu-item>
+    <t-menu-item
+      value="edit1"
+    >
+       资源编辑 
+    </t-menu-item>
+  </t-menu>
+  <t-menu
+    defaultvalue="dashboard"
+    height="550px"
+    theme="dark"
+  >
+    <img
+      alt="logo"
+      slot="logo"
+      src="https://www.tencent.com/img/index/menu_logo.png"
+      width="136"
+    />
+    <t-menu-item
+      value="dashboard"
+    >
+       仪表盘 
+    </t-menu-item>
+    <t-menu-item
+      value="resource"
+    >
+       资源列表 
+    </t-menu-item>
+    <t-menu-item
+      value="root"
+    >
+       根目录 
+    </t-menu-item>
+    <t-menu-item
+      value="control-platform"
+    >
+       调度平台 
+    </t-menu-item>
+    <t-menu-item
+      value="precise-monitor"
+    >
+       精准监控 
+    </t-menu-item>
+    <t-menu-item
+      value="mail"
+    >
+       消息区 
+    </t-menu-item>
+    <t-menu-item
+      value="user-circle"
+    >
+       个人中心 
+    </t-menu-item>
+    <t-menu-item
+      value="play-circle"
+    >
+       视频区 
+    </t-menu-item>
+    <t-menu-item
+      value="edit1"
+    >
+       资源编辑 
+    </t-menu-item>
+  </t-menu>
 </div>
 `;
 
-exports[`Menu Menu singleVue demo works fine 1`] = `
+exports[`Menu > Menu singleVue demo works fine 1`] = `
 <div>
-  <div
-    class="t-menu t-head-menu t-menu--light"
+  <t-head-menu
+    theme="light"
   >
-    <div
-      class="t-head-menu__inner"
+    <t-menu-item
+      value="item1"
     >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo_hover.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu"
-      >
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            菜单1
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-is-active t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            菜单2
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-is-disabled t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            禁用菜单
-          </span>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
-      >
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-search"
-          >
-            <use
-              href="#t-icon-search"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-user"
-          >
-            <use
-              href="#t-icon-user"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-ellipsis"
-          >
-            <use
-              href="#t-icon-ellipsis"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-   
+      菜单1
+    </t-menu-item>
+    <t-menu-item
+      value="item2"
+    >
+      菜单2
+    </t-menu-item>
+    <t-menu-item
+      disabled="true"
+      value="item4"
+    >
+      禁用菜单
+    </t-menu-item>
+  </t-head-menu>
   <br />
-   
-  <div
-    class="t-menu t-head-menu t-menu--dark"
+  <t-head-menu
     height="120px"
+    theme="dark"
   >
-    <div
-      class="t-head-menu__inner"
+    <img
+      alt="logo"
+      slot="logo"
+      src="https://www.tencent.com/img/index/menu_logo.png"
+      width="136"
+    />
+    <t-menu-item
+      value="item1"
     >
-      <div
-        class="t-menu__logo"
-      >
-        <img
-          alt="logo"
-          src="https://www.tencent.com/img/index/menu_logo.png"
-          width="136"
-        />
-      </div>
-      <ul
-        class="t-menu"
-      >
-         
-        <li
-          class="t-menu__item t-is-active t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            菜单1
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            菜单2
-          </span>
-        </li>
-         
-        <li
-          class="t-menu__item t-is-disabled t-menu__item--plain"
-        >
-          <span
-            class="t-menu__content"
-          >
-            禁用菜单
-          </span>
-        </li>
-      </ul>
-      <div
-        class="t-menu__operations"
-      >
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-search"
-          >
-            <use
-              href="#t-icon-search"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-mail"
-          >
-            <use
-              href="#t-icon-mail"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-user"
-          >
-            <use
-              href="#t-icon-user"
-            />
-          </svg>
-        </a>
-         
-        <a
-          href="javascript:;"
-        >
-          <svg
-            class="t-menu__operations-icon t-icon t-icon-ellipsis"
-          >
-            <use
-              href="#t-icon-ellipsis"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
+      菜单1
+    </t-menu-item>
+    <t-menu-item
+      value="item2"
+    >
+      菜单2
+    </t-menu-item>
+    <t-menu-item
+      disabled="true"
+      value="item4"
+    >
+      禁用菜单
+    </t-menu-item>
+  </t-head-menu>
 </div>
 `;

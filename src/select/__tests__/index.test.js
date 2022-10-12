@@ -1,17 +1,7 @@
 import { mount } from '@vue/test-utils';
-// import Vue from 'vue';
+// import { vi } from 'vitest';
 import { Select, OptionGroup, Option } from '@/src/select/index.ts';
-// const options = [{
-//   label: '苹果apple~~~~',
-//   value: 'apple',
-// }, {
-//   label: '香蕉banana~~~',
-//   value: 'banana',
-//   disabled: true,
-// }, {
-//   label: '橘子orange~~~',
-//   value: 'orange',
-// }];
+
 // every component needs four parts: props/events/slots/functions.
 describe('Select', () => {
   // test props api
@@ -109,7 +99,7 @@ describe('Select', () => {
   // test events
   describe('@event', () => {
     // it('blur', async () => {
-    //   const fn = jest.fn();
+    //   const fn = vi.fn();
     //   const wrapper = mount({
     //     render() {
     //       return (
@@ -128,7 +118,7 @@ describe('Select', () => {
     //   expect(selectWrapper.emitted().blur).toBeTruthy();
     // });
     // it('focus', async () => {
-    //   const fn = jest.fn();
+    //   const fn = vi.fn();
     //   const wrapper = mount({
     //     render() {
     //       return (
